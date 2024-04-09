@@ -1,0 +1,70 @@
+.reviews-article {
+}
+.reviews-container {
+}
+.review {
+    --star-color-on: #FCD503;
+    --star-color-off: #CDCDCD;
+}
+.stars {
+    display: flex;
+    gap: 6px;
+    color: var(--star-color-off);
+}
+
+/* #region Rating */
+/* RATING 1 */
+.rating-1 .star-li:nth-child(1) {
+    color: var(--star-color-on);
+}
+
+/* RATING 2 */
+.rating-2 .star-li:nth-child(1) {
+    color: var(--star-color-on);
+}
+.rating-2 .star-li:nth-child(2) {
+    color: var(--star-color-on);
+}
+
+/* RATING 3 */
+.rating-3 .star-li:nth-child(1) {
+    color: var(--star-color-on);
+}
+.rating-3 .star-li:nth-child(2) {
+    color: var(--star-color-on);
+}
+.rating-3 .star-li:nth-child(3) {
+    color: var(--star-color-on);
+}
+
+/* RATING 4 */
+.rating-4 .star-li:not(:last-child) {
+    color: var(--star-color-on);
+}
+
+/* RATING 5 */
+.rating-5 .star-li {
+    color: var(--star-color-on);
+}
+/* #endregion Rating */
+
+/* .star-li {} */
+
+.star {
+    fill: currentColor;
+    stroke: currentColor;
+    stroke-width: 1.5;
+}
+.person-reviewer {
+}
+.reviewer-ava {
+}
+.reviewer-name {
+}
+.reviewer-status {
+}
+
+/* 375   768   1280 */
+
+/* #region X */
+/* #endregion X */
