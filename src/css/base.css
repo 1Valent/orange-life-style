@@ -18,10 +18,54 @@
   color: #ff7f08;
 }
 /* це для помаранчевих надписів серед тексту  */
+
 .name-section {
   font-family: 'Suisse Intl';
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
   letter-spacing: -0.04em;
+  color: #FF7F08;
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .name-section {
+    position: absolute;
+  }
+}
+
+.h3-title {
+  font-family: 'Suisse Intl';
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.04em;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .h3-title {
+    font-size: 32px;
+    line-height: 32px;
+
+    margin-bottom: 25px;
+  }
+}
+
+.paragraph {
+  font-family: 'Suisse Intl';
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: -0.04em;
+  text-align: left;
+}
+
+@media screen and (min-width: 768px) {
+  .paragraph {
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
