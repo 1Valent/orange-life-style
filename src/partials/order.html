@@ -8,9 +8,9 @@
         <div class="order-div">
             <form class="order-form">
             
-                <input class="order-input" type="text" placeholder="Enter full name">
-                <input class="order-input" type="email" placeholder="Enter email">
-                <textarea class="order-input order-textarea" placeholder="Enter comments"></textarea>
+                <input class="order-input" type="text" placeholder="Enter full name" required>
+                <input class="order-input" type="email" placeholder="Enter email" pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" required>
+                <textarea class="order-input order-textarea" placeholder="Enter comments" required></textarea>
                 <button class="button-submit" type="submit">Submit</button>
             </form>
             <picture>
