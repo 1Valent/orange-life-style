@@ -1,0 +1,56 @@
+.burger-menu {
+  display: flex;
+  background-color: #ff7f08;
+  max-width: 375px;
+  min-width: 320px;
+  margin: 0 auto;
+}
+.bgr-menu {
+  color: #ff7f08;
+}
+.box-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 300px;
+  padding: 328px 32px 32px 32px;
+}
+.nav-menu {
+  color: #ff7f08;
+}
+.list-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.items-menu {
+  color: #ff7f08;
+}
+.caption-menu {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  color: rgba(252, 252, 252, 0.5);
+}
+.address {
+  color: #ff7f08;
+}
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fcfcfc;
+  border-radius: 8px;
+
+  padding: 8px;
+  width: 132px;
+  height: 30px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: -0.01em;
+  text-align: center;
+  color: #ff7f08;
+}
