@@ -93,7 +93,7 @@
         max-width: 400px;
     }
 }
-@media screen and (min-width: 1158px) {
+@media screen and (min-width: 1280px) {
     .order-table-content {
         margin-right: 80px;
     }
@@ -110,7 +110,7 @@
         display: none;
     }
 }
-@media screen and (max-width: 1157px) {
+@media screen and (max-width: 1280px) {
     .order-form-img {
         display: none;
     }
