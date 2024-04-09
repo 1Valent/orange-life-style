@@ -1,24 +1,41 @@
-<div class="burger-menu">
-  <img
-    srcset="
-      ../img/mob-menu/mob-menu@1x.jpg 1x,
-      ../img/mob-menu/mob-menu@2x.jpg 2x
-    "
-    src="../img/mob-menu/mob-menu@1x.jpg"
-    alt="citrus mics"
-    width="179"
-    height="812"
-    class="bgr-menu"
-  />
+<div class="burger-menu is-open">
+  <picture>
+    <source
+      srcset="
+        ../img/mob-menu/mob-menu@1x.jpg 1x,
+        ../img/mob-menu/mob-menu@2x.jpg 2x
+      "
+      media="(max-width: 767px)"
+    />
+    <source
+      srcset="
+        ../img/tab-menu/tab-menu@1x.jpg 1x,
+        ../img/tab-menu/tab-menu@2x.jpg 2x
+      "
+      media="(min-width: 768px)"
+    />
+    <img
+      src="../img/mob-menu/mob-menu@1x.jpg"
+      alt="citrus mics"
+      width="179"
+      height="812"
+      class="bgr-img"
+    />
+  </picture>
   <div class="box-menu">
+    <button class="btn-exit">
+      <svg class="swg-exit" width="28" height="28">
+        <use href="../img/icons/icons.svg#icon-exit"></use>
+      </svg>
+    </button>
     <nav class="nav-menu">
       <ul class="list-menu">
         <li class="items-menu">
-          <a href="" class="caption-menu"></a>How It Works
+          <a href="" class="caption-menu activ">How It Works</a>
         </li>
-        <li class="items-menu"><a href="" class="caption-menu"></a>Fruits</li>
-        <li class="items-menu"><a href="" class="caption-menu"></a>Reviews</li>
-        <li class="items-menu"><a href="" class="caption-menu"></a>Order</li>
+        <li class="items-menu"><a href="" class="caption-menu">Fruits</a></li>
+        <li class="items-menu"><a href="" class="caption-menu">Reviews</a></li>
+        <li class="items-menu"><a href="" class="caption-menu">Order</a></li>
       </ul>
     </nav>
     <address class="address">
