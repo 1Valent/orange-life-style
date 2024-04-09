@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 .reviews-article {
 }
 .reviews-container {
@@ -10,24 +11,98 @@
     display: flex;
     gap: 6px;
     color: var(--star-color-off);
+=======
+.sec-descr {
+  display: flex;
+  flex-direction: collumn;
+}
+@media only screen and (min-width: 768px) {
+  .sec-descr {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .sec-article {
+    width: 496px;
+  }
+}
+@media only screen and (min-width: 1128px) {
+  .sec-article {
+    width: 547px;
+    margin-right: 80px;
+  }
+}
+
+.reviews-container {
+    display: flex;
+    gap: 32px;
+    margin-bottom: 20px;
+}
+@media only screen and (min-width: 768px) {
+  .reviews-container {
+    margin-bottom: 80px;
+  }
+}
+
+.review {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border: 1px solid #000;
+    width: 100%;
+    padding: 30px 20px;
+  --star-color-on: #fcd503;
+  --star-color-off: #cdcdcd;
+}
+@media only screen and (min-width: 768px) {
+  .review {
+    flex-basis: calc((100% - 32px) / 2);
+  }
+}
+/* #region Stars */
+.stars {
+    position: absolute;
+    top: 30px;
+    right: 20px;
+  display: flex;
+  gap: 6px;
+  color: var(--star-color-off);
+}
+@media only screen and (min-width: 1128px) {
+  .stars {
+    right: 28px;
+  }
+>>>>>>> Stashed changes
 }
 
 /* #region Rating */
 /* RATING 1 */
 .rating-1 .star-li:nth-child(1) {
+<<<<<<< Updated upstream
     color: var(--star-color-on);
+=======
+  color: var(--star-color-on);
+>>>>>>> Stashed changes
 }
 
 /* RATING 2 */
 .rating-2 .star-li:nth-child(1) {
+<<<<<<< Updated upstream
     color: var(--star-color-on);
 }
 .rating-2 .star-li:nth-child(2) {
     color: var(--star-color-on);
+=======
+  color: var(--star-color-on);
+}
+.rating-2 .star-li:nth-child(2) {
+  color: var(--star-color-on);
+>>>>>>> Stashed changes
 }
 
 /* RATING 3 */
 .rating-3 .star-li:nth-child(1) {
+<<<<<<< Updated upstream
     color: var(--star-color-on);
 }
 .rating-3 .star-li:nth-child(2) {
@@ -35,22 +110,40 @@
 }
 .rating-3 .star-li:nth-child(3) {
     color: var(--star-color-on);
+=======
+  color: var(--star-color-on);
+}
+.rating-3 .star-li:nth-child(2) {
+  color: var(--star-color-on);
+}
+.rating-3 .star-li:nth-child(3) {
+  color: var(--star-color-on);
+>>>>>>> Stashed changes
 }
 
 /* RATING 4 */
 .rating-4 .star-li:not(:last-child) {
+<<<<<<< Updated upstream
     color: var(--star-color-on);
+=======
+  color: var(--star-color-on);
+>>>>>>> Stashed changes
 }
 
 /* RATING 5 */
 .rating-5 .star-li {
+<<<<<<< Updated upstream
     color: var(--star-color-on);
+=======
+  color: var(--star-color-on);
+>>>>>>> Stashed changes
 }
 /* #endregion Rating */
 
 /* .star-li {} */
 
 .star {
+<<<<<<< Updated upstream
     fill: currentColor;
     stroke: currentColor;
     stroke-width: 1.5;
@@ -68,3 +161,30 @@
 
 /* #region X */
 /* #endregion X */
+=======
+  fill: currentColor;
+  stroke: currentColor;
+  stroke-width: 1.5;
+}
+/* #endregion Stars */
+
+.person-reviewer {
+    display: flex;
+    gap: 10px;
+}
+/* .reviewer-ava {} */
+
+.person-info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+/* .reviewer-name { } */
+/* .reviewer-status { } */
+
+/* 375   768   1280 */
+
+/* #region X */
+/* #endregion X */
+>>>>>>> Stashed changes
