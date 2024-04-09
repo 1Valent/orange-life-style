@@ -29,3 +29,20 @@
     height: 73px;
     margin-bottom: 12px;
 }
+
+.button-submit {
+    background-color: #FCFCFC;
+    border: 0;
+    border-radius: 16px;
+    color: #FF7F08;
+
+    font-family: 'Suisse Intl';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: -0.04em;
+    text-align: center;   
+
+    padding: 13px 0;
+    width: 100%;
+}
