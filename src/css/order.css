@@ -1,8 +1,21 @@
+.order {
+    display: flex;
+    flex-direction: column;
+}
+.order-table-content {
+    margin-bottom: 40px;
+}
+
 .order-form {
     margin-bottom: 10px;
     padding: 28px 20px;
     border-radius: 16px;
     background-color: #FF7F08;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .order-input {
@@ -17,6 +30,7 @@
     line-height: 18px;
     letter-spacing: -0.04em;
     text-align: left;
+    
     
     width: calc(100% - 40px);
     padding: 12px 14px;
@@ -49,4 +63,28 @@
 
 .order-img {
     margin-bottom: 80px;
+    width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+    .order p:first-child {
+        position: absolute;
+    }
+    .order-table-content {
+        width: 496px;
+        align-self: flex-end;
+        margin-bottom: 80px;
+    }
+    .order-input {
+        font-size: 16px;
+        line-height: 20px;
+
+        max-width: 370px;
+    }
+    .button-submit {
+        font-size: 16px;
+        line-height: 20px;
+
+        max-width: 400px;
+    }
 }
