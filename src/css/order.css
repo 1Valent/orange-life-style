@@ -1,0 +1,31 @@
+.order-form {
+    margin-bottom: 10px;
+    padding: 28px 20px;
+    border-radius: 16px;
+    background-color: #FF7F08;
+}
+
+.order-input {
+    background-color: transparent;
+    border-radius: 8px;
+    border: 1px solid rgba(252, 252, 252, 0.35);
+    color: #FCFCFC;
+
+    font-family: Suisse Intl;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: -0.04em;
+    text-align: left;
+    
+    width: calc(100% - 40px);
+    padding: 12px 14px;
+    margin-bottom: 8px;
+}
+.order-input::placeholder {
+    color: #FCFCFC;
+}
+.order-textarea  {
+    height: 73px;
+    margin-bottom: 12px;
+}
