@@ -19,7 +19,7 @@
 }
 /* це для помаранчевих надписів серед тексту  */
 
-.name-section {
+.section-name {
   font-family: 'Suisse Intl';
   font-size: 14px;
   font-weight: 400;
@@ -30,7 +30,7 @@
 }
 
 @media screen and (min-width: 768px) {
-  .name-section {
+  .section-name {
     position: absolute;
   }
 }
@@ -54,7 +54,7 @@
   }
 }
 
-.paragraph {
+.par {
   font-family: 'Suisse Intl';
   font-size: 14px;
   font-weight: 400;
@@ -64,7 +64,7 @@
 }
 
 @media screen and (min-width: 768px) {
-  .paragraph {
+  .par {
     font-size: 16px;
     line-height: 20px;
   }
