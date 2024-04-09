@@ -6,11 +6,13 @@
     margin-bottom: 40px;
 }
 
-.order-form {
-    margin-bottom: 10px;
-    padding: 28px 20px;
+.order-div {
     border-radius: 16px;
+    margin-bottom: 10px;
     background-color: #FF7F08;
+}
+.order-form {
+    padding: 28px 20px;
 
     display: flex;
     flex-direction: column;
@@ -67,18 +69,21 @@
 }
 
 @media screen and (min-width: 768px) {
-    .order p:first-child {
-        position: absolute;
-    }
     .order-table-content {
         width: 496px;
         align-self: flex-end;
         margin-bottom: 80px;
     }
+    .order-div {
+        margin-bottom: 16px;
+    }
+    .order-form {
+        padding: 43px 0;
+    }
     .order-input {
         font-size: 16px;
         line-height: 20px;
-
+        
         max-width: 370px;
     }
     .button-submit {
@@ -86,5 +91,27 @@
         line-height: 20px;
 
         max-width: 400px;
+    }
+}
+@media screen and (min-width: 1158px) {
+    .order-table-content {
+        margin-right: 80px;
+    }
+    .order-div {
+        margin-bottom: 124px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .order-form {
+        width: 400px;
+        padding-left: 73px;
+    }
+    .order-img {
+        display: none;
+    }
+}
+@media screen and (max-width: 1157px) {
+    .order-form-img {
+        display: none;
     }
 }

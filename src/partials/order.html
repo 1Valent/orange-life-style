@@ -1,28 +1,38 @@
 <section>
     <div class="order container">
-        <p class="name-section">Order</p>
+        <h2 class="name-section">Order</h2>
         <div class="order-table-content">
-            <h2 class="section-h-main">Fresh <span class="orange-span">Harvest Box</span> has got you covered</h2>
+            <h3 class="section-h-main">Fresh <span class="orange-span">Harvest Box</span> has got you covered</h3>
             <p class="section-p-main">Our boxes are packed with delicious, nutritious fruits and vegetables, perfect for anyone looking to eat healthier or support local farmers. Order your box today and start enjoying the best that nature has to offer!</p>
         </div>
-        <form class="order-form">
-            <input class="order-input" type="text" placeholder="Enter full name">
-            <input class="order-input" type="email" placeholder="Enter email">
-            <textarea class="order-input order-textarea" placeholder="Enter comments"></textarea>
-            <button class="button-submit" type="submit">Submit</button>
-        </form>
+        <div class="order-div">
+            <form class="order-form">
+            
+                <input class="order-input" type="text" placeholder="Enter full name">
+                <input class="order-input" type="email" placeholder="Enter email">
+                <textarea class="order-input order-textarea" placeholder="Enter comments"></textarea>
+                <button class="button-submit" type="submit">Submit</button>
+            </form>
+            <picture>
+                <source srcset="
+                    ./img/woman-holding-box-full-oranges-her-hands-desktop.png 1x,
+                    ./img/woman-holding-box-full-oranges-her-hands-desktop-x2.png 2x
+                    " media="(min-width:1158px)" />
+                <img class="order-form-img" src="./img/woman-holding-box-full-oranges-her-hands-desktop.png" alt="" />
+            </picture>
+        </div>
         <picture>
             <source srcset="
-                ./img/ 1x,
-                ./img/ 2x
+                ./img/woman-holding-box-full-oranges-her-hands-desktop.png 1x,
+                ./img/woman-holding-box-full-oranges-her-hands-desktop-x2.png 2x
             " media="(min-width:1158px)" />
             <source srcset="
-                ./img/woman-holding-box-full-oranges-her-hands-tablet.jpg 1x,
-                ./img/woman-holding-box-full-oranges-her-hands-tablet-x2.jpg 2x
+                ./img/woman-holding-box-full-oranges-her-hands-tablet.png 1x,
+                ./img/woman-holding-box-full-oranges-her-hands-tablet-x2.png 2x
             " media="(min-width:768px)" />
             <source srcset="
-                ./img/woman-holding-box-full-oranges-her-hands.jpg 1x,
-                ./img/woman-holding-box-full-oranges-her-hands-x2.jpg 2x
+                ./img/woman-holding-box-full-oranges-her-hands-mobile.png 1x,
+                ./img/woman-holding-box-full-oranges-her-hands-mobile-x2.png 2x
             " media="(max-width:768px)" />
             <img class="order-img" src="./img/woman-holding-box-full-oranges-her-hands.jpg" alt=""/>
         </picture>
