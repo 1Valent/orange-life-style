@@ -67,9 +67,6 @@
     margin-bottom: 80px;
     width: 100%;
 }
-.order-img, .order-form-img {
-    border-radius: 16px; 
-}
 
 @media screen and (min-width: 768px) {
     .order-table-content {
