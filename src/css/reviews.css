@@ -1,17 +1,3 @@
-<<<<<<< Updated upstream
-.reviews-article {
-}
-.reviews-container {
-}
-.review {
-    --star-color-on: #FCD503;
-    --star-color-off: #CDCDCD;
-}
-.stars {
-    display: flex;
-    gap: 6px;
-    color: var(--star-color-off);
-=======
 .sec-descr {
   display: flex;
   flex-direction: collumn;
@@ -72,45 +58,24 @@
   .stars {
     right: 28px;
   }
->>>>>>> Stashed changes
 }
 
 /* #region Rating */
 /* RATING 1 */
 .rating-1 .star-li:nth-child(1) {
-<<<<<<< Updated upstream
-    color: var(--star-color-on);
-=======
   color: var(--star-color-on);
->>>>>>> Stashed changes
 }
 
 /* RATING 2 */
 .rating-2 .star-li:nth-child(1) {
-<<<<<<< Updated upstream
-    color: var(--star-color-on);
-}
-.rating-2 .star-li:nth-child(2) {
-    color: var(--star-color-on);
-=======
   color: var(--star-color-on);
 }
 .rating-2 .star-li:nth-child(2) {
   color: var(--star-color-on);
->>>>>>> Stashed changes
 }
 
 /* RATING 3 */
 .rating-3 .star-li:nth-child(1) {
-<<<<<<< Updated upstream
-    color: var(--star-color-on);
-}
-.rating-3 .star-li:nth-child(2) {
-    color: var(--star-color-on);
-}
-.rating-3 .star-li:nth-child(3) {
-    color: var(--star-color-on);
-=======
   color: var(--star-color-on);
 }
 .rating-3 .star-li:nth-child(2) {
@@ -118,50 +83,22 @@
 }
 .rating-3 .star-li:nth-child(3) {
   color: var(--star-color-on);
->>>>>>> Stashed changes
 }
 
 /* RATING 4 */
 .rating-4 .star-li:not(:last-child) {
-<<<<<<< Updated upstream
-    color: var(--star-color-on);
-=======
   color: var(--star-color-on);
->>>>>>> Stashed changes
 }
 
 /* RATING 5 */
 .rating-5 .star-li {
-<<<<<<< Updated upstream
-    color: var(--star-color-on);
-=======
   color: var(--star-color-on);
->>>>>>> Stashed changes
 }
 /* #endregion Rating */
 
 /* .star-li {} */
 
 .star {
-<<<<<<< Updated upstream
-    fill: currentColor;
-    stroke: currentColor;
-    stroke-width: 1.5;
-}
-.person-reviewer {
-}
-.reviewer-ava {
-}
-.reviewer-name {
-}
-.reviewer-status {
-}
-
-/* 375   768   1280 */
-
-/* #region X */
-/* #endregion X */
-=======
   fill: currentColor;
   stroke: currentColor;
   stroke-width: 1.5;
@@ -187,4 +124,3 @@
 
 /* #region X */
 /* #endregion X */
->>>>>>> Stashed changes
