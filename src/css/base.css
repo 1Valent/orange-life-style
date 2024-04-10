@@ -1,11 +1,11 @@
 :root {
-  font-family: 'Suisse Intl';
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
 
-  color: #0F0F0F;
-  background-color: #FCFCFC;
+  color: #242424;
+  background-color: rgba(255, 255, 255, 0.87);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -18,76 +18,10 @@
   color: #ff7f08;
 }
 /* це для помаранчевих надписів серед тексту  */
-
-img {
-  border-radius: 16px;
-}
-
-.sec-descr {
-  display: flex;
-  flex-direction: column;
-}
-
-.section-name {
+.name-section {
+  font-family: 'Suisse Intl';
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
   letter-spacing: -0.04em;
-  color: #FF7F08;
-  margin-bottom: 20px;
-}
-
-@media screen and (min-width: 768px) {
-  .section-name {
-    position: absolute;
-  }
-}
-
-.section-table-content {
-  margin-bottom: 40px;
-}
-@media screen and (min-width: 768px) {
-  .section-table-content {
-    width: 496px;
-    align-self: flex-end;
-    margin-bottom: 80px;
-  }
-}
-@media screen and (min-width: 1280px) {
-  .section-table-content {
-    margin-right: 80px;
-  }
-}
-
-.h3-title {
-  font-size: 24px;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: -0.04em;
-  text-align: left;
-  margin-bottom: 20px;
-}
-
-@media screen and (min-width: 768px) {
-  .h3-title {
-    font-size: 32px;
-    line-height: 32px;
-
-    margin-bottom: 25px;
-  }
-}
-
-.par {
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 18px;
-  letter-spacing: -0.04em;
-  text-align: left;
-}
-
-@media screen and (min-width: 768px) {
-  .par {
-    font-size: 16px;
-    line-height: 20px;
-  }
 }
