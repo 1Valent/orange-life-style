@@ -1,3 +1,9 @@
+
+.order {
+    display: flex;
+    flex-direction: column;
+}
+
 .order-div {
     border-radius: 16px;
     margin-bottom: 10px;
