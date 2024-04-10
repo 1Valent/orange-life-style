@@ -4,8 +4,8 @@
   line-height: 24px;
   font-weight: 400;
 
-  color: #0F0F0F;
-  background-color: #FCFCFC;
+  color: #0f0f0f;
+  background-color: #fcfcfc;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -28,13 +28,28 @@ img {
   display: flex;
   flex-direction: column;
 }
+@media only screen and (min-width: 768px) {
+  .sec-descr {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .sec-article {
+    width: 496px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .sec-article {
+    width: 547px;
+    margin-right: 80px;
+  }
+}
 
 .section-name {
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
   letter-spacing: -0.04em;
-  color: #FF7F08;
+  color: #ff7f08;
   margin-bottom: 20px;
 }
 
