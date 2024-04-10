@@ -1,11 +1,3 @@
-.order {
-    display: flex;
-    flex-direction: column;
-}
-.order-table-content {
-    margin-bottom: 40px;
-}
-
 .order-div {
     border-radius: 16px;
     margin-bottom: 10px;
@@ -26,7 +18,6 @@
     border: 1px solid rgba(252, 252, 252, 0.35);
     color: #FCFCFC;
 
-    font-family: Suisse Intl;
     font-size: 14px;
     font-weight: 400;
     line-height: 18px;
@@ -52,7 +43,6 @@
     border-radius: 16px;
     color: #FF7F08;
 
-    font-family: 'Suisse Intl';
     font-size: 14px;
     font-weight: 400;
     line-height: 18px;
@@ -67,16 +57,8 @@
     margin-bottom: 80px;
     width: 100%;
 }
-.order-img, .order-form-img {
-    border-radius: 16px; 
-}
 
 @media screen and (min-width: 768px) {
-    .order-table-content {
-        width: 496px;
-        align-self: flex-end;
-        margin-bottom: 80px;
-    }
     .order-div {
         margin-bottom: 16px;
     }
@@ -97,9 +79,6 @@
     }
 }
 @media screen and (min-width: 1280px) {
-    .order-table-content {
-        margin-right: 80px;
-    }
     .order-div {
         margin-bottom: 124px;
         display: flex;
