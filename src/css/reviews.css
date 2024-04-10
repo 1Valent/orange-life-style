@@ -129,8 +129,19 @@
     border-radius: 16px;
 }
 
-/* .reviewer-name { } */
-/* .reviewer-status { } */
+.reviewer-name {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #0f0f0f;
+ }
+.reviewer-status {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.33333;
+  letter-spacing: -0.02em;
+  color: rgba(15, 15, 15, 0.5);
+ }
 
 /* 375   768   1280 */
 
