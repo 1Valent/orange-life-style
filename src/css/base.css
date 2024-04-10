@@ -20,7 +20,6 @@
 /* це для помаранчевих надписів серед тексту  */
 
 .section-name {
-  font-family: 'Suisse Intl';
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
@@ -35,8 +34,23 @@
   }
 }
 
+.section-table-content {
+  margin-bottom: 40px;
+}
+@media screen and (min-width: 768px) {
+  .section-table-content {
+    width: 496px;
+    align-self: flex-end;
+    margin-bottom: 80px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .section-table-content {
+    margin-right: 80px;
+  }
+}
+
 .h3-title {
-  font-family: 'Suisse Intl';
   font-size: 24px;
   font-weight: 400;
   line-height: 24px;
@@ -55,7 +69,6 @@
 }
 
 .par {
-  font-family: 'Suisse Intl';
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
