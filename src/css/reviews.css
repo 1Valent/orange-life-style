@@ -1,4 +1,6 @@
-.sec-descr {
+/* merged to bace.css */
+
+/* .sec-descr {
   display: flex;
   flex-direction: column;
 }
@@ -16,7 +18,7 @@
     width: 547px;
     margin-right: 80px;
   }
-}
+} */
 
 .reviews-container {
   display: flex;
