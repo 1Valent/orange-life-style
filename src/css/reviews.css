@@ -19,9 +19,9 @@
 }
 
 .reviews-container {
-    display: flex;
-    gap: 32px;
-    margin-bottom: 20px;
+  display: flex;
+  gap: 32px;
+  margin-bottom: 20px;
 }
 @media only screen and (min-width: 768px) {
   .reviews-container {
@@ -30,34 +30,33 @@
 }
 
 .review {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    border: 1px solid rgba(15, 15, 15, 0.15);
-    border-radius: 12px;
-    width: 100%;
-    padding: 30px 20px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border: 1px solid rgba(15, 15, 15, 0.15);
+  border-radius: 12px;
+  width: 100%;
+  padding: 30px 20px;
   --star-color-on: #fcd503;
   --star-color-off: #cdcdcd;
 }
 @media only screen and (max-width: 1279px) {
-    .mob-tab-hide {
-      display: none;
-    }
-  
+  .mob-tab-hide {
+    display: none;
   }
-  @media only screen and (min-width: 1280px) {
-    .review {
-      flex-basis: calc((100% - 32px) / 2);
-    }
+}
+@media only screen and (min-width: 1280px) {
+  .review {
+    flex-basis: calc((100% - 32px) / 2);
   }
+}
 
 /* #region Stars */
 .stars {
-    position: absolute;
-    top: 30px;
-    right: 20px;
+  position: absolute;
+  top: 30px;
+  right: 20px;
   display: flex;
   gap: 6px;
   color: var(--star-color-off);
@@ -114,23 +113,42 @@
 /* #endregion Stars */
 
 .person-reviewer {
-    display: flex;
-    gap: 10px;
+  display: flex;
+  gap: 10px;
 }
 /* .reviewer-ava {} */
 
 .person-info {
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
 }
 
 .decor-img {
-    border-radius: 16px;
+  border-radius: 16px;
 }
 
-/* .reviewer-name { } */
-/* .reviewer-status { } */
+.reviewer-name {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #0f0f0f;
+}
+.reviewer-status {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.33333;
+  letter-spacing: -0.02em;
+  color: rgba(15, 15, 15, 0.5);
+}
+
+.par-rev {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+  color: #777;
+}
 
 /* 375   768   1280 */
 
