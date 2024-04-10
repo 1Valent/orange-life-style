@@ -34,7 +34,8 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
-    border: 1px solid #000;
+    border: 1px solid rgba(15, 15, 15, 0.15);
+    border-radius: 12px;
     width: 100%;
     padding: 30px 20px;
   --star-color-on: #fcd503;
@@ -115,6 +116,10 @@
     display: flex;
     flex-direction: column;
     gap: 4px;
+}
+
+.decor-img {
+    border-radius: 16px;
 }
 
 /* .reviewer-name { } */
