@@ -1,6 +1,6 @@
 .sec-descr {
   display: flex;
-  flex-direction: collumn;
+  flex-direction: column;
 }
 @media only screen and (min-width: 768px) {
   .sec-descr {
@@ -11,7 +11,7 @@
     width: 496px;
   }
 }
-@media only screen and (min-width: 1128px) {
+@media only screen and (min-width: 1280px) {
   .sec-article {
     width: 547px;
     margin-right: 80px;
@@ -41,11 +41,18 @@
   --star-color-on: #fcd503;
   --star-color-off: #cdcdcd;
 }
-@media only screen and (min-width: 768px) {
-  .review {
-    flex-basis: calc((100% - 32px) / 2);
+@media only screen and (max-width: 1279px) {
+    .mob-tab-hide {
+      display: none;
+    }
+  
   }
-}
+  @media only screen and (min-width: 1280px) {
+    .review {
+      flex-basis: calc((100% - 32px) / 2);
+    }
+  }
+
 /* #region Stars */
 .stars {
     position: absolute;
@@ -55,7 +62,7 @@
   gap: 6px;
   color: var(--star-color-off);
 }
-@media only screen and (min-width: 1128px) {
+@media only screen and (min-width: 1280px) {
   .stars {
     right: 28px;
   }
