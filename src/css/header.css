@@ -1,33 +1,32 @@
-
 .logo-header {
-  fill: #FF7F08;
+  fill: #ff7f08;
 }
-
 
 /* mobile container */
 .container {
-    min-width: 320px;
-    padding: 0px 32px;
-    margin: 0 auto;
-  }
-  
-  /* tablet container */
-  @media screen and (min-width: 768px) {
-    .container {
-      max-width: 100%;
-      padding: 0px 32px;
-    }
-  }
-  
-  /* desktop container */
-  @media screen and (min-width: 1158px) {
-    .container {
-      max-width: 1158px;
-      padding: 0 32px;
-    }
-  }
+  min-width: 320px;
+  padding: 0px 32px;
+  margin: 0 auto;
+}
 
-.header-container, .nav-list {
+/* tablet container */
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 100%;
+    padding: 0px 32px;
+  }
+}
+
+/* desktop container */
+@media screen and (min-width: 1158px) {
+  .container {
+    max-width: 1158px;
+    padding: 0 32px;
+  }
+}
+
+.header-container,
+.nav-list {
   display: flex;
   align-items: center;
 }
@@ -55,14 +54,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  }
+}
 
-  .nav-link:hover,
-  .nav-link:focus {
-    border-color: #FF7F08;
-  }
+.nav-link:hover,
+.nav-link:focus {
+  border-color: #ff7f08;
+}
 
-.tel-link { 
+.tel-link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -71,10 +70,10 @@
   border-radius: 8px;
   min-width: 168px;
   height: 34px;
-  background-color: #FF7F08;
+  background-color: #ff7f08;
   color: #fcfcfc;
   cursor: pointer;
-} 
+}
 
 .tel-link:hover,
 .tel-link:focus {
@@ -82,29 +81,32 @@
 }
 
 /* mobile container */
-.burger-menu-btn {
+.menu-btn {
   cursor: pointer;
+  stroke: #000;
   background-color: transparent;
-  fill: #000;
   border: transparent;
-  padding: 16px 0px;
+  width: 40px;
+  height: 100%;
+
+  /* padding: 16px 0px; */
   margin-left: auto;
 }
 
 /* tablet container */
 @media screen and (min-width: 768px) {
-.menu-btn {
-  display: none;
-   }
+  .menu-btn {
+    display: none;
   }
-  
-  /* desktop container */
-  @media screen and (min-width: 1200px) {
-  .burger-btn {
-  display: none;
-   }
-  }
+}
 
+/* desktop container */
+@media screen and (min-width: 1200px) {
   .burger-btn {
-    fill: black;
+    display: none;
   }
+}
+
+.burger-btn {
+  fill: black;
+}
