@@ -1,0 +1,115 @@
+:root {
+  font-family: 'Suisse Intl';
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+
+  color: #0f0f0f;
+  background-color: #fcfcfc;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+.orange-span {
+  color: #ff7f08;
+}
+
+/* це для помаранчевих надписів серед тексту  */
+
+img {
+  border-radius: 16px;
+}
+
+.sec-descr {
+  display: flex;
+  flex-direction: column;
+}
+
+@media only screen and (min-width: 768px) {
+  .sec-descr {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .sec-article {
+    width: 496px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .sec-article {
+    width: 547px;
+    margin-right: 80px;
+  }
+}
+
+.section-name {
+  display: block;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: -0.04em;
+  color: #ff7f08;
+  padding-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .section-name {
+    font-size: 14px;
+    line-height: 18px;
+    position: absolute;
+  }
+}
+
+.section-table-content {
+  margin-bottom: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .section-table-content {
+    width: 496px;
+    align-self: flex-end;
+    margin-bottom: 80px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .section-table-content {
+    margin-right: 80px;
+  }
+}
+
+.h3-title {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.04em;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .h3-title {
+    font-size: 32px;
+    line-height: 32px;
+
+    margin-bottom: 25px;
+  }
+}
+
+.par {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: -0.04em;
+  text-align: left;
+}
+
+@media screen and (min-width: 768px) {
+  .par {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
