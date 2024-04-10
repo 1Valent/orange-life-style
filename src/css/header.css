@@ -18,22 +18,59 @@
 }
 
 /* desktop container */
-@media screen and (min-width: 1158px) {
+@media screen and (min-width: 1280px) {
   .container {
-    max-width: 1158px;
+    min-width: 1216px;
     padding: 0 32px;
   }
 }
 
-.header-container,
-.nav-list {
+.header-container {
   display: flex;
   align-items: center;
+  justify-content: space-around;
+  padding-bottom: 100px;
+  padding-top: 28px;
 }
 
 .nav-list {
-  gap: 20px;
+  display: none;
 }
+
+@media only screen and (min-width: 1280px) {
+   .nav-list{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+  }
+}
+
+.tel-link {
+  display: none;
+}
+
+@media only screen and (min-width: 1280px) {
+  .tel-link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid transparent;
+      margin-left: 130px;
+      border-radius: 8px;
+      min-width: 168px;
+      height: 34px;
+      background-color: #ff7f08;
+      color: #fcfcfc;
+      cursor: pointer;
+  }
+}
+
+.tel-link:hover,
+.tel-link:focus {
+  background-color: #e76f00;
+}
+
 .nav {
   display: flex;
 }
@@ -42,6 +79,9 @@
   display: flex;
   align-items: center;
   margin-right: 215px;
+  font-size: 18px;
+  line-height: 1;
+  letter-spacing: -0.04em;
 }
 .nav-link {
   text-decoration: none;
@@ -61,29 +101,10 @@
   border-color: #ff7f08;
 }
 
-.tel-link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid transparent;
-  margin-left: 130px;
-  border-radius: 8px;
-  min-width: 168px;
-  height: 34px;
-  background-color: #ff7f08;
-  color: #fcfcfc;
-  cursor: pointer;
-}
-
-.tel-link:hover,
-.tel-link:focus {
-  background-color: #e76f00;
-}
-
 /* mobile container */
 .menu-btn {
   cursor: pointer;
-  stroke: #000;
+  stroke: #0F0F0F;
   background-color: transparent;
   border: transparent;
   width: 40px;
@@ -96,17 +117,14 @@
 /* tablet container */
 @media screen and (min-width: 768px) {
   .menu-btn {
-    display: none;
+    width: 40px;
+    height: 40px;
   }
 }
 
 /* desktop container */
-@media screen and (min-width: 1200px) {
-  .burger-btn {
+@media screen and (min-width: 1280px) {
+  .menu-btn {
     display: none;
   }
-}
-
-.burger-btn {
-  fill: black;
 }
