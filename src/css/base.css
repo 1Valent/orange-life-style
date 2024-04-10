@@ -29,6 +29,7 @@ img {
   flex-direction: column;
   margin-bottom: 40px;
 }
+
 @media only screen and (min-width: 768px) {
   .sec-descr {
     flex-direction: row;
@@ -46,22 +47,29 @@ img {
   }
 }
 
-/* .section-table-content {
-  margin-bottom: 40px;
+.section-name {
+  display: block;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: -0.04em;
+  color: #ff7f08;
+  padding-bottom: 20px;
 }
+
 @media screen and (min-width: 768px) {
-  .section-table-content {
-    width: 496px;
-    align-self: flex-end;
-    margin-bottom: 80px;
+  .section-name {
+    font-size: 14px;
+    line-height: 18px;
+    position: absolute;
   }
+}
 }
 @media screen and (min-width: 1280px) {
   .section-table-content {
     margin-right: 80px;
   }
-} */
-
+} 
 /* h2 */
 .section-name {
   font-weight: 400;

@@ -5,29 +5,25 @@
   color: #ff7f08;
 }
 
-.fruits {
+.section-fruits {
 }
 
-.fruits .conteiner {
+.section-fruits .container {
   display: flex;
   flex-direction: column;
   max-width: 375px;
   gap: 40px;
-
-  /* temporary */
-  padding: 0 20px;
   margin: 0 auto;
 }
 
 @media only screen and (min-width: 768px) {
-  .fruits .conteiner {
+  .section-fruits .container {
     max-width: 768px;
-    padding: 0 32px;
   }
 }
 
 @media only screen and (min-width: 1280px) {
-  .fruits .conteiner {
+  .section-fruits .container {
     max-width: 1280px;
   }
 }
@@ -40,7 +36,9 @@
   flex-direction: column;
   gap: 20px;
 }
-
+.fruits-title-wrapper .section-name {
+  padding: 0;
+}
 @media only screen and (min-width: 768px) {
   .fruits-title-wrapper {
     flex-direction: row;
@@ -115,7 +113,7 @@
 @media only screen and (min-width: 768px) {
   .fruits-list {
     gap: 32px 23px;
-  } 
+  }
 }
 
 .fruits-item {
@@ -190,13 +188,12 @@
 .fruits-item-btn {
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.28;
   letter-spacing: -0.01em;
   text-align: center;
 
   border-radius: 8px;
-  padding: 8px;
-  width: 94px;
+  padding: 8px 6px;
+  width: 93px;
   height: 34px;
 
   border-color: transparent;
@@ -218,7 +215,7 @@
   border-radius: 16px;
 
   margin: 0 auto;
-  padding: 14px 32px;
+  padding: 14px 30px;
   width: 132px;
   height: 46px;
 
