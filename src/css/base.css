@@ -46,29 +46,6 @@ img {
     margin-right: 80px;
   }
 }
-
-.section-name {
-  display: block;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
-  letter-spacing: -0.04em;
-  color: #ff7f08;
-  padding-bottom: 20px;
-}
-
-@media screen and (min-width: 768px) {
-  .section-name {
-    font-size: 14px;
-    line-height: 18px;
-    position: absolute;
-  }
-}
-@media screen and (min-width: 1280px) {
-  .section-table-content {
-    margin-right: 80px;
-  }
-}
 /* h2 */
 .section-name {
   font-weight: 400;
