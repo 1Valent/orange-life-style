@@ -159,7 +159,7 @@
   border: 1px solid rgba(15, 15, 15, 0.1);
   border-radius: 8px;
   /* max-height: 30px; */
-  flex-grow: 1;
+  /* flex-grow: 1; */
 }
 
 .footer-nav-item:first-child {
