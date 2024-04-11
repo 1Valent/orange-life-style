@@ -1,4 +1,5 @@
 /* Base styles */
+@import url('./fonts.css');
 @import url('./normalise.css');
 @import url('./base.css');
 @import url('./reset.css');
@@ -14,4 +15,4 @@
 @import url('./menu.css');
 @import url('./order.css');
 @import url('./reset.css');
-@import url('./styles.css');
+@import url('./reviews.css');
