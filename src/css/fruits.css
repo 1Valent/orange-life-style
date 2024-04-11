@@ -155,6 +155,8 @@
 .fruits-item:hover .fruits-item-btn {
   background-color: #fcfcfc;
   color: #0f0f0f;
+  box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset,
+    rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
 }
 
 .fruits-name-wrap {
@@ -196,10 +198,14 @@
   width: 93px;
   height: 34px;
 
+  border: 0;
   border-color: transparent;
 
   color: #fcfcfc;
   background: #ff7f08;
+
+  box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px,
+    rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
 }
 /* #endregion */
 
