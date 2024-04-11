@@ -11,70 +11,65 @@
 .section-fruits .container {
   display: flex;
   flex-direction: column;
-  max-width: 375px;
-  gap: 40px;
-  margin: 0 auto;
 }
 
-@media only screen and (min-width: 768px) {
-  .section-fruits .container {
-    max-width: 768px;
-  }
-}
-
-@media only screen and (min-width: 1280px) {
-  .section-fruits .container {
-    max-width: 1280px;
-  }
-}
 
 /* #endregion */
 
 /* #region  Title*/
-.fruits-title-wrapper {
+.fruits-descr {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  margin-bottom: 40px;
 }
-.fruits-title-wrapper .section-name {
+
+@media only screen and (min-width: 768px) {
+  .fruits-descr {
+    margin-bottom: 80px;
+  }
+}
+
+.fruits-descr .section-name {
   padding: 0;
 }
+
 @media only screen and (min-width: 768px) {
-  .fruits-title-wrapper {
+  .fruits-descr {
     flex-direction: row;
     justify-content: space-between;
   }
 }
 
 @media only screen and (min-width: 1280px) {
-  .fruits-title-wrapper {
+  .fruits-descr {
     padding-right: 80px;
   }
 }
 
-.fruits-title-list {
+.fruits-article {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 
-.fruits-title-item {
-  width: 335px;
+.fruits-article {
+  max-width: 335px;
 }
 
 @media only screen and (min-width: 768px) {
-  .fruits-title-item {
-    width: 496px;
+  .fruits-article {
+    max-width: 496px;
   }
 }
 
 @media only screen and (min-width: 1280px) {
-  .fruits-title-item {
-    width: 547px;
+  .fruits-article {
+    max-width: 547px;
   }
 }
 
-.fruits-section-name {
+.section-name {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.28;
