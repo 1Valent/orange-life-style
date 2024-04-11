@@ -75,6 +75,7 @@
     justify-content: space-between;
     margin-bottom: 0;
     padding: 0;
+    height: 382px;
   }
 }
 
@@ -218,5 +219,6 @@
 @media only screen and (min-width: 1280px) {
   .hiw-box-img {
     width: 627px;
+    max-width: none;
   }
 }
