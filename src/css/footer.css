@@ -3,7 +3,6 @@
 }
 .footer .container {
   padding-bottom: 24px;
-  padding-top: 40px;
   display: flex;
   flex-direction: column;
   gap: 20px;
