@@ -38,6 +38,7 @@
   stroke: #fcfcfc;
 }
 .bgr-img {
+  border-radius: 0;
 }
 .box-menu {
   display: flex;
@@ -56,7 +57,6 @@
 .items-menu {
 }
 .caption-menu.activ {
-  color: #fcfcfc;
 }
 .caption-menu {
   font-weight: 400;
@@ -64,6 +64,11 @@
   line-height: 1;
   letter-spacing: -0.02em;
   color: rgba(252, 252, 252, 0.5);
+}
+.caption-menu:focus,
+.caption-menu:hover,
+.caption-menu:active {
+  color: #fcfcfc;
 }
 .address {
 }
@@ -73,7 +78,6 @@
   align-items: center;
   background-color: #fcfcfc;
   border-radius: 8px;
-
   padding: 8px;
   width: 100%;
   height: 30px;
@@ -84,13 +88,17 @@
   text-align: center;
   color: #ff7f08;
 }
+.contact:hover,
+.contact:focus {
+  color: #fcfcfc;
+  background-color: #ff7f08;
+  border: 1px solid #fcfcfc;
+}
 @media only screen and (min-width: 768px) {
   .burger-menu {
     min-width: 768px;
   }
   .bgr-img {
-    width: 403px;
-    height: 1024px;
   }
   .box-menu {
     padding: 350px 89px 89px 89px;
