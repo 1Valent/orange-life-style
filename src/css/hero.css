@@ -1,7 +1,9 @@
 .hero .container {
-  padding: 20px;
 }
 
+.pic {
+  width: 100%;
+}
 .title {
   font-family: 'Suisse Intl', sans-serif;
   font-weight: 400;
@@ -11,11 +13,12 @@
   text-align: center;
   text-shadow: 0 4px 70px 0 rgba(0, 0, 0, 0.1);
   color: #0f0f0f;
-  padding: 20px;
+  padding-bottom: 20px;
 }
 @media only screen and (min-width: 768px) {
   .title {
     font-size: 64px;
+    padding-bottom: 32px;
   }
 }
 
@@ -23,12 +26,33 @@
   color: #ff7f08;
 }
 
+.text-list {
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+  padding-bottom: 40px;
+}
+@media only screen and (min-width: 768px) {
+  .text-list {
+    padding-bottom: 50px;
+  }
+}
+
+.text-items {
+}
 .text {
   font-weight: 400;
   font-size: 12px;
-  line-height: 1.33333;
+  line-height: 1.33;
   letter-spacing: -0.04em;
   text-transform: uppercase;
   text-align: center;
   color: #0f0f0f;
+  text-shadow: 0 4px 70px 0 rgba(0, 0, 0, 0.1);
+}
+@media only screen and (min-width: 768px) {
+  .text {
+    font-size: 16px;
+    line-height: 1.25;
+  }
 }

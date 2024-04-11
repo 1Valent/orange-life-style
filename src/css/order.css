@@ -1,3 +1,9 @@
+
+.order-section {
+    display: flex;
+    flex-direction: column;
+}
+
 .order-div {
     border-radius: 16px;
     margin-bottom: 10px;
@@ -69,6 +75,7 @@
         font-size: 16px;
         line-height: 20px;
         
+        padding: 14px;
         width: 400px;
     }
     .button-submit {
