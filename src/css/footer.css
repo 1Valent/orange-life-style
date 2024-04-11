@@ -102,6 +102,12 @@
   fill: #ff7f08;
   opacity: 0.8;
 }
+@media only screen and (min-width: 768px) {
+  .footer-socials-icon {
+    width: 28px;
+    height: 28px;
+  }
+}
 .footer-socials-link:hover,
 .footer-socials-link:focus {
   border-color: #e76f00;
