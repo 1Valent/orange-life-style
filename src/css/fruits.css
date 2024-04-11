@@ -102,6 +102,10 @@
 /* #endregion */
 
 /* #region Show button*/
+.show-btn-wrapp {
+  display: flex;
+}
+
 .ftuits-show-btn {
   font-weight: 400;
   font-size: 14px;
