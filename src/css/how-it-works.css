@@ -34,6 +34,11 @@
 .par {
   /* base.css */
 }
+@media only screen and (max-width: 767px) {
+  br {
+    display: none;
+  }
+}
 
 .box-hiw {
   display: flex;
@@ -64,8 +69,8 @@
 }
 @media only screen and (min-width: 768px) {
   .box-hiw-svg {
-    height: 382;
-    margin-bottom: 16px;
+    height: 382px;
+    /* margin-bottom: 16px; */
   }
 }
 @media only screen and (min-width: 1280px) {
@@ -78,16 +83,17 @@
   }
 }
 
-.box-hiw-svg .hiw-ol {
+.box-hiw-svg {
+  position: relative;
   padding: 60px 20px;
 }
 @media only screen and (min-width: 768px) {
-  .box-hiw-svg .hiw-ol {
+  .box-hiw-svg {
     padding: 72px 195px 72px 80px;
   }
 }
 @media only screen and (min-width: 1280px) {
-  .box-hiw-svg .hiw-ol {
+  .box-hiw-svg {
     padding: 72px 0px 72px 80px;
   }
 }
@@ -96,9 +102,14 @@
   flex-direction: column;
   row-gap: 32px;
   justify-content: center;
-  padding: 60px 20px;
   counter-reset: section;
   list-style-type: none;
+  padding: 0;
+}
+@media only screen and (min-width: 768px) {
+  .hiw-ol {
+    row-gap: 37px;
+  }
 }
 .hiw-list {
   display: flex;
@@ -111,7 +122,11 @@
   line-height: 1.29;
   letter-spacing: -0.04em;
   color: #fcfcfc;
-  text-shadow: 0 4px 70px o rgba(0, 0, 0, 0.1);
+}
+@media only screen and (min-width: 768px) {
+  .hiw-list {
+    font-size: 20px;
+  }
 }
 
 .hiw-list::before {
@@ -131,69 +146,76 @@
 
 .icon-orange {
   position: absolute;
+  top: 247px;
+  left: 10px;
   width: 67px;
   height: 75px;
-  left: 10px;
-  bottom: 66px;
-  fill: rgba(252, 252, 252, 0.08);
 }
 .icon-melon {
   position: absolute;
+  top: 175px;
+  left: 178px;
   width: 82px;
   height: 88px;
-  top: 241px;
-  left: 120px;
-  fill: rgba(252, 252, 252, 0.08);
 }
 .icon-pineapple {
   position: absolute;
+  top: 30px;
+  left: 77px;
   width: 103px;
   height: 153px;
-  top: -42px;
-  left: 102px;
-  fill: rgba(252, 252, 252, 0.08);
 }
 .icon-lemon {
   position: absolute;
+  top: 123px;
+  left: 320px;
   width: 44px;
   height: 61px;
-  top: 42px;
-  left: 206px;
-  fill: rgba(252, 252, 252, 0.08);
 }
-
 .icon-banana {
+  position: absolute;
+  top: 232px;
+  left: 355px;
+  border: 1px;
+  width: 98px;
+  height: 105px;
 }
 
 @media only screen and (min-width: 768px) {
   .icon-orange {
-    position: absolute;
+    width: 92px;
+    height: 104.03px;
+    top: 212px;
     left: 10px;
-    bottom: 66px;
   }
   .icon-melon {
-    position: absolute;
-    top: 241px;
-    left: 120px;
+    width: 114px;
+    height: 122px;
+    top: 140px;
+    left: 241px;
   }
   .icon-pineapple {
-    position: absolute;
-    top: -42px;
+    width: 142px;
+    height: 212px;
+    top: -87px;
     left: 102px;
   }
   .icon-lemon {
-    position: absolute;
+    width: 60px;
+    height: 84px;
     top: 42px;
-    left: 206px;
+    left: 438px;
   }
-
   .icon-banana {
-    position: absolute;
-    right: 83px;
-    bottom: 45px;
+    width: 135px;
+    height: 145px;
+    top: 192px;
+    left: 487px;
   }
 }
+
 .hiw-img {
+  border-radius: 16px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -209,6 +231,7 @@
 }
 
 .hiw-box-img {
+  border-radius: 16px;
 }
 @media screen and (max-width: 1279px) {
   .hiw-box-img {
@@ -218,5 +241,6 @@
 @media only screen and (min-width: 1280px) {
   .hiw-box-img {
     width: 627px;
+    height: 382px;
   }
 }
