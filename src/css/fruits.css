@@ -1,3 +1,11 @@
+/* #region Title*/
+@media only screen and (min-width: 1280px) {
+  .par {
+    max-width: 509px;
+  }
+}
+/* #endregion*/
+
 /* #region Fruit card*/
 .fruits-list {
   display: flex;
