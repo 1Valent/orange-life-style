@@ -87,7 +87,7 @@
 
   border-radius: 8px;
   padding: 8px 6px;
-  width: 93px;
+  min-width: 93px;
   height: 34px;
 
   border: 0;
