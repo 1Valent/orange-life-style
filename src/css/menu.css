@@ -64,6 +64,8 @@
   line-height: 1;
   letter-spacing: -0.02em;
   color: rgba(252, 252, 252, 0.5);
+  transition: 250ms ease-in;
+  transition-property: color;
 }
 .caption-menu:focus,
 .caption-menu:hover,
@@ -87,6 +89,8 @@
   letter-spacing: -0.01em;
   text-align: center;
   color: #ff7f08;
+  transition: 250ms ease-in;
+  transition-property: color, background-color, border;
 }
 .contact:hover,
 .contact:focus {
@@ -103,7 +107,7 @@
   .bgr-img {
   }
   .box-menu {
-    padding: 350px 89px 89px 89px;
+    padding: 350px 89px 50px 89px;
   }
   .caption-menu {
     font-size: 32px;
