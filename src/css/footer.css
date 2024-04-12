@@ -273,8 +273,8 @@
 }
 .footer-nav-link:hover,
 .footer-nav-link:focus {
-  border-color: #ff7f08;
-  text-shadow: 1px -1px 1px rgb(29, 27, 27);
+  border-color: rgb(255, 127, 8);
+  text-shadow: 1px -1px 1px rgb(255, 127, 8);
 }
 /* #endregion */
 .logo {
