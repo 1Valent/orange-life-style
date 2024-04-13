@@ -33,6 +33,7 @@
     color: #FCFCFC;
 }
 .order-textarea  {
+    resize: none;
     height: 73px;
     margin-bottom: 12px;
 }
