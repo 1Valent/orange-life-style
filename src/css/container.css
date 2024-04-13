@@ -3,6 +3,7 @@
   max-width: 375px;
   padding: 40px 20px;
   margin: 0 auto;
+  scroll-behavior: smooth;
 }
 @media only screen and (min-width: 768px) {
   .container {
