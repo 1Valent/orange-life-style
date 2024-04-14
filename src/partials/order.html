@@ -1,76 +1,78 @@
-<section class="container"  id="order">
-  <div class="sec-descr">
-    <h2 class="section-name">Order</h2>
-    <div class="sec-article">
-      <h3 class="h3-title">Fresh <span class="orange-span">Harvest Box</span> has got you covered</h3>
-      <p class="par">
-        Our boxes are packed with delicious, nutritious fruits and vegetables,
-        perfect for anyone looking to eat healthier or support local farmers.
-        Order your box today and start enjoying the best that nature has to offer!
-      </p>
+<section id="order">
+  <div class="container">
+    <div class="sec-descr">
+      <h2 class="section-name">Order</h2>
+      <div class="sec-article">
+        <h3 class="h3-title">Fresh <span class="orange-span">Harvest Box</span> has got you covered</h3>
+        <p class="par">
+          Our boxes are packed with delicious, nutritious fruits and vegetables,
+          perfect for anyone looking to eat healthier or support local farmers.
+          Order your box today and start enjoying the best that nature has to offer!
+        </p>
+      </div>
     </div>
-  </div>
-  <div class="order-div">
-    <form class="order-form">
-      <input
-        class="order-input"
-        type="text"
-        placeholder="Enter full name"
-        required
-      />
-      <input
-        class="order-input"
-        type="email"
-        placeholder="Enter email"
-        pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
-        required
-      />
-      <textarea
-        class="order-input order-textarea"
-        placeholder="Enter comments"
-        required
-      ></textarea>
-      <button class="button-submit" type="submit">Submit</button>
-    </form>
+    <div class="order-div">
+      <form class="order-form">
+        <input
+          class="order-input"
+          type="text"
+          placeholder="Enter full name"
+          required
+        />
+        <input
+          class="order-input"
+          type="email"
+          placeholder="Enter email"
+          pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+          required
+        />
+        <textarea
+          class="order-input order-textarea"
+          placeholder="Enter comments"
+          required
+        ></textarea>
+        <button class="button-submit" type="submit">Submit</button>
+      </form>
+      <picture>
+        <source
+          srcset="
+            ./img/block-2-desk/block-2-desk@1x.avif 1x,
+            ./img/block-2-desk/block-2-desk@2x.avif 2x
+          "
+          media="(min-width:1280px)"
+        />
+        <img
+          class="img order-form-img"
+          src="./img/block-2-desk/block-2-desk@1x.avif"
+          alt=""
+        />
+      </picture>
+    </div>
     <picture>
       <source
         srcset="
-          ./img/block-2-desk/block-2-desk@1x.jpg 1x,
-          ./img/block-2-desk/block-2-desk@2x.jpg 2x
+          ./img/block-2-desk/block-2-desk@1x.avif 1x,
+          ./img/block-2-desk/block-2-desk@2x.avif 2x
         "
         media="(min-width:1280px)"
       />
-      <img
-        class="img order-form-img"
-        src="./img/block-2-desk/block-2-desk@1x.jpg"
-        alt=""
+      <source
+        srcset="
+          ./img/block-2-tab/block-2-tab@1x.avif 1x,
+          ./img/block-2-tab/block-2-tab@2x.avif 2x
+        "
+        media="(min-width:768px)"
       />
+      <source
+        srcset="
+          ./img/block-2-mob/block-2-mob@1x.avif 1x,
+          ./img/block-2-mob/block-2-mob@2x.avif 2x
+        "
+        media="(max-width:768px)"
+      />
+      <img class="img order-img" 
+      src="./img/block-2-mob/block-2-mob@1x.avif" 
+      alt="" />
     </picture>
   </div>
-  <picture>
-    <source
-      srcset="
-        ./img/block-2-desk/block-2-desk@1x.jpg 1x,
-        ./img/block-2-desk/block-2-desk@2x.jpg 2x
-      "
-      media="(min-width:1280px)"
-    />
-    <source
-      srcset="
-        ./img/block-2-tab/block-2-tab@1x.jpg 1x,
-        ./img/block-2-tab/block-2-tab@2x.jpg 2x
-      "
-      media="(min-width:768px)"
-    />
-    <source
-      srcset="
-        ./img/block-2-mob/block-2-mob@1x.jpg 1x,
-        ./img/block-2-mob/block-2-mob@2x.jpg 2x
-      "
-      media="(max-width:768px)"
-    />
-    <img class="img order-img" 
-    src="./img/block-2-mob/block-2-mob@1x.jpg" 
-    alt="" />
-  </picture>
 </section>
