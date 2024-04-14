@@ -13,15 +13,15 @@
   opacity: 0;
   pointer-events: none;
   transition: 450ms ease-in-out;
-  transition-property: transform;
+  transition-property: transform, visibility, opacity;
 }
 .burger-menu.is-open {
   visibility: visible;
   opacity: 1;
   pointer-events: auto;
   transform: translateX(0);
-  transition: 450ms ease-in-out;
-  transition-property: transform;
+  /* transition: 450ms ease-in-out;
+  transition-property: transform, visibility, opacity ; */
 }
 .btn-exit {
   display: flex;
