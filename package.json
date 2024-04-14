@@ -1,11 +1,11 @@
 {
-  "name": "vanilla-app-template",
+  "name": "team-2",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/orange-life-style/",
+    "build": "vite build --base=/html-css_72_orange-life-style/",
     "preview": "vite preview"
   },
   "devDependencies": {
