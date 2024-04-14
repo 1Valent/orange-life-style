@@ -47,17 +47,12 @@
   align-items: center;
   padding: 328px 32px 32px 32px;
 }
-.nav-menu {
-}
 .list-menu {
   display: flex;
   flex-direction: column;
   gap: 14px;
 }
-.items-menu {
-}
-.caption-menu.activ {
-}
+
 .caption-menu {
   font-weight: 400;
   font-size: 20px;
@@ -72,8 +67,7 @@
 .caption-menu:active {
   color: #fcfcfc;
 }
-.address {
-}
+
 .contact {
   display: flex;
   justify-content: center;
@@ -104,8 +98,7 @@
   .burger-menu {
     min-width: 768px;
   }
-  .bgr-img {
-  }
+
   .box-menu {
     padding: 350px 89px 50px 89px;
   }

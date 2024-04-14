@@ -144,9 +144,10 @@
         fill="#FCFCFC" fill-opacity="0.08" />
     </symbol>
     <symbol id="burger-menu" viewBox="0 0 32 32">
-      <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.6"
-        d="M27.556 16h-24M28 10.667H4M28 21.333H4" />
-    </symbol>
+        <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.6" d="M28 16h-24"></path>
+        <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.6" d="M28 10.667h-24"></path>
+         <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.6" d="M28 21.333h-24"></path>
+</symbol>
     <symbol id="logoorange" viewBox="0 0 32 32">
       <path
         d="M29.082 0.314h-4.009c-1.237 0-2.24 0.983-2.24 2.195v3.929c0 1.212 1.003 2.195 2.24 2.195h4.009c1.237 0 2.24-0.983 2.24-2.195v-3.929c0-1.212-1.003-2.195-2.24-2.195z">
