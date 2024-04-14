@@ -1,3 +1,7 @@
+:root {
+  scroll-behavior: smooth;
+}
+
 .logo-header {
   fill: #ff7f08;
 }
@@ -5,6 +9,7 @@
 /* mobile container */
 .cnt-head{
   min-width: 320px;
+  max-width: 375px;
   padding: 0px 32px;
   margin: 0 auto;
 }
@@ -12,7 +17,7 @@
 /* tablet container */
 @media screen and (min-width: 768px) {
   .cnt-head {
-    max-width: 100%;
+    max-width: 768px;
     padding: 0px 32px;
   }
 }
@@ -28,9 +33,9 @@
 .header-container {
   display: flex;
   align-items: center;
-  justify-content: space-around;
   padding-bottom: 38px;
   padding-top: 28px;
+  justify-content: center;
 }
 
 .nav-list {
@@ -53,9 +58,7 @@
 @media only screen and (min-width: 1280px) {
   .tel-link {
       display: flex;
-      align-items: center;
-      justify-content: center;
-      border: 1px solid transparent;
+      padding: 8px 16px;
       margin-left: 130px;
       border-radius: 8px;
       min-width: 168px;
@@ -63,6 +66,10 @@
       background-color: #ff7f08;
       color: #fcfcfc;
       cursor: pointer;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 1.28571;
+      letter-spacing: -0.01em;
   }
 }
 
@@ -78,7 +85,7 @@
 .logo-a {
   display: flex;
   align-items: center;
-  margin-right: 215px;
+  margin-right: 220px;
   font-size: 18px;
   line-height: 1;
   letter-spacing: -0.04em;
@@ -99,6 +106,18 @@
 .nav-link:hover,
 .nav-link:focus {
   border-color: #ff7f08;
+}
+
+.nav-link:hover::after,
+.nav-link:focus::after {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  border-radius: 8px;
+  cursor: pointer;
 }
 
 /* mobile container */
