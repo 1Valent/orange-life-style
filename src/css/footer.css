@@ -25,6 +25,11 @@
   flex-direction: column;
   gap: 40px;
 }
+@media only screen and (min-width: 768px) {
+  .footer-top {
+    gap: 80px;
+  }
+}
 @media only screen and (min-width: 1280px) {
   .footer-top {
     flex-direction: row;
@@ -185,7 +190,8 @@
 }
 @media only screen and (min-width: 768px) {
   .footer-address-descr {
-    font-size: 14px;
+    font-size: 16px;
+    line-height: 1.25;
     text-align: end;
     max-width: 181px;
     height: 60px;
