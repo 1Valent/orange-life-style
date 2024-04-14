@@ -163,6 +163,7 @@
   line-height: 1.29;
   margin-bottom: 14px;
   text-transform: uppercase;
+  transition: color 250ms ease-in;
 }
 @media only screen and (min-width: 768px) {
   .footer-tel {
@@ -172,16 +173,19 @@
     text-align: end;
   }
 }
+.footer-tel:hover,
+.footer-tel:focus {
+  color: #e76f00;
+}
 .footer-adress-descr {
   font-size: 14px;
-  line-height: 1.28571;
+  line-height: 1.29;
   letter-spacing: -0.02em;
-  max-width: 285px;
+  max-width: 235px;
 }
 @media only screen and (min-width: 768px) {
   .footer-adress-descr {
     font-size: 14px;
-    line-height: 1.29;
     text-align: end;
     max-width: 181px;
     height: 60px;
@@ -261,8 +265,8 @@
   border-radius: 8px;
   flex-grow: 1;
   padding: 8px 0;
-  transition: 250ms ease-in;
-  transition-property: border-color, text-shadow;
+  transition: 250ms cubic-bezier(0.39, 0.575, 0.565, 1);
+  transition-property: border-color, -webkit-animation, animation;
 }
 
 @media only screen and (min-width: 768px) {
@@ -274,7 +278,31 @@
 .footer-nav-link:hover,
 .footer-nav-link:focus {
   border-color: rgb(255, 127, 8);
-  text-shadow: 1px -1px 1px rgb(255, 127, 8);
+  /* text-shadow: 1px -1px 1px rgba(255, 127, 8, 0.6); */
+  -webkit-animation: footer-nav-item 250ms cubic-bezier(0.39, 0.575, 0.565, 1)
+    both;
+  animation: footer-nav-item 250ms cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+
+@-webkit-keyframes footer-nav-item {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@keyframes footer-nav-item {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
 }
 /* #endregion */
 .logo {
