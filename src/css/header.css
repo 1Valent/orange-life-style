@@ -103,6 +103,18 @@
   border-color: #ff7f08;
 }
 
+.nav-link:hover::after,
+.nav-link:focus::after {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
 /* mobile container */
 .menu-btn {
   cursor: pointer;
