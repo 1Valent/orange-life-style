@@ -50,12 +50,17 @@
 /* h2 */
 .section-name {
   font-weight: 400;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.25;
   letter-spacing: -0.04em;
   color: #ff7f08;
   text-shadow: 0 4px 70px 0 rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
+}
+@media only screen and (min-width: minwidthpx) {
+  .section-name {
+    font-size: 16px;
+  }
 }
 
 .h3-title {
