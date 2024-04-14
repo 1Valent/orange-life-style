@@ -1,13 +1,9 @@
-:root {
-  scroll-behavior: smooth;
-}
-
 .logo-header {
   fill: #ff7f08;
 }
 
 /* mobile container */
-.cnt-head{
+.cnt-head {
   min-width: 320px;
   max-width: 375px;
   padding: 0px 32px;
@@ -43,7 +39,7 @@
 }
 
 @media only screen and (min-width: 1280px) {
-   .nav-list{
+  .nav-list {
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -57,19 +53,19 @@
 
 @media only screen and (min-width: 1280px) {
   .tel-link {
-      display: flex;
-      padding: 8px 16px;
-      margin-left: 130px;
-      border-radius: 8px;
-      min-width: 168px;
-      height: 34px;
-      background-color: #ff7f08;
-      color: #fcfcfc;
-      cursor: pointer;
-      font-weight: 400;
-      font-size: 14px;
-      line-height: 1.28571;
-      letter-spacing: -0.01em;
+    display: flex;
+    padding: 8px 16px;
+    margin-left: 130px;
+    border-radius: 8px;
+    min-width: 168px;
+    height: 34px;
+    background-color: #ff7f08;
+    color: #fcfcfc;
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.28571;
+    letter-spacing: -0.01em;
   }
 }
 
@@ -90,17 +86,21 @@
   line-height: 1;
   letter-spacing: -0.04em;
 }
+
+
 .nav-link {
-  text-decoration: none;
-  position: relative;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  border: 1px solid rgba(15, 15, 15, 0.1);
-  border-radius: 8px;
   width: 140px;
-  height: 34px;
+  padding: 8px;
   display: flex;
   justify-content: center;
   align-items: center;
+  line-height: 1.28571;
+  letter-spacing: -0.01em;
+  font-size: 14px;
+  
+  border-radius: 8px;
+  border: 1px solid rgba(15, 15, 15, 0.1);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-link:hover,
@@ -108,22 +108,13 @@
   border-color: #ff7f08;
 }
 
-.nav-link:hover::after,
-.nav-link:focus::after {
-  content: '';
-  position: absolute;
-  top: -2px;
-  left: -2px;
-  right: -2px;
-  bottom: -2px;
-  border-radius: 8px;
-  cursor: pointer;
-}
+
+
 
 /* mobile container */
 .menu-btn {
   cursor: pointer;
-  stroke: #0F0F0F;
+  stroke: #0f0f0f;
   background-color: transparent;
   border: transparent;
   width: 40px;
