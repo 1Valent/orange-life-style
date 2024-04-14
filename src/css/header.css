@@ -66,12 +66,18 @@
     font-size: 14px;
     line-height: 1.28571;
     letter-spacing: -0.01em;
+    transition: transform 0.2s ease;
   }
 }
 
 .tel-link:hover,
 .tel-link:focus {
   background-color: #e76f00;
+  animation: stretching 0.8s;
+}
+
+.tel-link:active {
+  transform: scale(0.96);
 }
 
 .nav {
@@ -100,15 +106,42 @@
   
   border-radius: 8px;
   border: 1px solid rgba(15, 15, 15, 0.1);
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 0.2s ease border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav-link:active {
+  transform: scale(0.96);
 }
 
 .nav-link:hover,
 .nav-link:focus {
   border-color: #ff7f08;
+  animation: stretching 0.8s;
 }
 
-
+@keyframes stretching {
+  0% {
+      transform: scale3d(1, 1, 1);
+  }
+  30% {
+    transform: scale3d(1.25, 0.75, 1);
+  }
+  40% {
+  transform: scale3d(0.75, 1.25, 1);
+  }
+  50% {
+    transform: scale3d(1.15, 0.85, 1);
+  }
+  60% {
+    transform: scale3d(0.95, 1.05, 1);
+  }
+  75% {
+    transform: scale3d(1.05, 0.95, 1);
+  }
+  100% {
+    transform: scale3d(1, 1, 1);
+  }
+}
 
 
 /* mobile container */
