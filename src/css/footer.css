@@ -25,6 +25,11 @@
   flex-direction: column;
   gap: 40px;
 }
+@media only screen and (min-width: 768px) {
+  .footer-top {
+    gap: 80px;
+  }
+}
 @media only screen and (min-width: 1280px) {
   .footer-top {
     flex-direction: row;
@@ -155,7 +160,7 @@
   /* fill: #fff; */
   opacity: 1;
 }
-.footer-adress {
+.footer-address {
 }
 .footer-tel {
   display: block;
@@ -177,15 +182,16 @@
 .footer-tel:focus {
   color: #e76f00;
 }
-.footer-adress-descr {
+.footer-address-descr {
   font-size: 14px;
   line-height: 1.29;
   letter-spacing: -0.02em;
   max-width: 235px;
 }
 @media only screen and (min-width: 768px) {
-  .footer-adress-descr {
-    font-size: 14px;
+  .footer-address-descr {
+    font-size: 16px;
+    line-height: 1.25;
     text-align: end;
     max-width: 181px;
     height: 60px;
@@ -278,7 +284,6 @@
 .footer-nav-link:hover,
 .footer-nav-link:focus {
   border-color: rgb(255, 127, 8);
-  /* text-shadow: 1px -1px 1px rgba(255, 127, 8, 0.6); */
   -webkit-animation: footer-nav-item 250ms cubic-bezier(0.39, 0.575, 0.565, 1)
     both;
   animation: footer-nav-item 250ms cubic-bezier(0.39, 0.575, 0.565, 1) both;
