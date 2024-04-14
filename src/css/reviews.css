@@ -103,8 +103,6 @@
 }
 /* #endregion Rating */
 
-/* .star-li {} */
-
 .star {
   fill: currentColor;
   stroke: currentColor;
@@ -116,7 +114,6 @@
   display: flex;
   gap: 10px;
 }
-/* .reviewer-ava {} */
 
 .person-info {
   display: flex;
@@ -141,16 +138,22 @@
   letter-spacing: -0.02em;
   color: rgba(15, 15, 15, 0.5);
 }
-
 .par-rev {
   font-weight: 400;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.25;
   letter-spacing: -0.02em;
   color: #777;
 }
 
-/* 375   768   1280 */
-
-/* #region X */
-/* #endregion X */
+@media only screen and (min-width: 768px) {
+  .reviewer-name  {
+    font-size: 20px;
+  }
+  .reviewer-status {
+    font-size: 14px;
+  }
+  .par-rev {
+    font-size: 16px;
+  }
+}
