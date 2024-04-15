@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAMAAAAKE/YAAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAACylBMVEUAAAD/gAr/gAf/fgf/gAj/gAj/gAj/gAj/gAf/gAD/gAD/fgf/gAj/fgj/gAj/fwj/fgb/egv/fgj/fwf/gAj/fwj/gAn/gAn/gAn/gAv/AAD/fQb/gAj/fQj/gAf/dAD/gAn/gAj/gAj/fQr/fgj/fwj/fwj/gAj/gAf/gAD/gAD/fgj/fwf/fwj/gAj/fwn/gAn/VQD/fwj/eQz/fwj/fwj/fQj/gAf/fwj/fQr/gAj/fgj/fQX/gAj/gA7/gAj/fwj/fgn/fgj/gAj/gAj/fwj/fgf/egr/fwj/gAb/gAj/gAj/fwj/fwj/cQD/fwj/gAn/fwj/fgj/fwj/gAj/gAD/fwn/gAb/gAj/gAD/gAv/gAj/fAf/gAj/fgj/gAn/gAn/fwj/fwj/fgj/fwj/ZgD/gAj/gAn/fwj/fwj/fgn/gAj/bQD/fwj/ewj/fQr/fwf/gAn/gAn/gAr/gAf/fwn/fgn/gAb/fwn/gAn/dgD/fwj/gAn/fwf/gAj/eQ3/fwf/fwj/gAn/gAr/gAj/fgj/fwj/gAr/fgf/gAj/fAf/gAf/gAf/fwj/gAj/gAj/fQn/fgn/fwj/gAn/fgf/gAj/gAb/fgf/gAn/fgf/fwn/fwf/gAD/fgf/gAj/gAz/gAf/gAj/gAj/gAn/gAj/gAj/gA3/fgj/fwn/gAj/fwj/fwj/dwD/eA//gAj/fgj/gAn/fAf/gAn/fwj/fwj/gAf/fwj/gAn/fwj/fwf/gAj/gAj/gAj/gAj/gAn/gAj/gAj/fgn/fwj/gAj/fAb/gAf/fwj/fwj/fwf/gAf/fgn/gAj/gAf/gAn/gAn/fQb/fAj/ewn/gAj/fQn/fgn/gAj/gAD/fwf/fwj/gAn/gAj/gAj/gAj/fgf/gAj/gAn/gAj/fgn/fwj/gAf/fwj/gAj/gAj/fwj/fgn/fwf/ewn/gAj/fwj///8lXuiwAAAA7HRSTlMAGk5pgIh8YEYMCG/K/vi3Txdjj6a7sJZ4MAEtRD0mC1jixjFBwf3gbgYKYa/13pE8A/cVtd8/aOUzpGUv+hK6+3d9QiDpZxnb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"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABm1BMVEUAAAD/fAb/fwj/fwj/gAj/fwj/gAj/gAD/gAn/gAj/gAj/gAj/fwj/gAD/ewn/fwn/gAj/gAj/fQb/fgf/gAj/gAn/VQD/fwj/gA3/fwj/gAj/gAn/gAf/gAf/fgj/gAj/gAj/fQb/fgn/fwf/gAf/fwj/fwj/fAf/gAf/gAj/fwj/egv/gAf/gAf/gAn/fwj/eA//gAn/fgj/fgn/gA7/gAn/fwj/gAj/fwj/fgf/eQz/gAj/fwj/gAf/gAj/fgj/fQX/gAn/fgn/fQn/gAD/gAj/fwj/egr/gAn/gAj/gAf/gAj/fwj/fgn/gAn/fgf/gAv/gAn/fwj/fgj/gAb/fgn/gAr/gAf/fQr/gAr/gAj/fgf/gAD/gAj/fAf/gAv/gAj/gAj/fgn/gAj/fwj/fwf/gAj/gAj/gAj/fwj/fwj/fwj/gAj/fQn/fwn/gAj/gAD/fwf/ZgD/fwj/gAj/fgf/fgj/gAn/fAf/gAj/fgf/fwj/gAf/dwD/gAj/fgn/fwj/gAj/bQD/fQn/fAj/ewn/fQj/fwj///+cWqRJAAAAh3RSTlMAKb3r7t16AnTAzMaHCh2RqpotSWaQA9kU/aTQJEx9qNQrU+9snckjSoDlF0Zu0ukROmVZEjiBiIVLFYKZij5bL1RVNwSE5xmWtmj093fwbRg8+/4sUTRINVDKRwz2JzC46nXk7Y+gIkS/y/XYOdH4Bs0F18Jpe5IlfGfVjg/8V/neBzshGz1T2ypjAAAAAWJLR0SIa2YWWgAAAAlwSFlzAAAhvgAAIb4B4Kb5aAAAAAd0SU1FB+gEDgkmI030K2UAAAGDSURBVDjLrdLVV0JBEAbwT7kWisVVEQsxsBPFVrCwxU4wsDuwu/i3neXOcnjx+MI8/c7yHe7szCImVqcoSlw8gITEJL1en5xiIKempVNlZAL6oFZGQGVmAdk5GhUTcvmU/sLMzAPymcECSBUCRUwLUCyPrVEIlLBKgTJmOWCTgQpUaqiqBmq44Vq6cZ3G+gagsUlV1WY73R0trQ6Ho61dsKOzi6rbhmhUD31B7TWF3Od0uVz9CYLZDVQDhEGtm6FhslvzCCVGx4TGJ4BJvs8UMC3v5kHHjKbZ/MhBzUnPY0Fy8Y/AkqTx/0DEusMLWI4MrLBWgbV17syLVBnwwbuxSU8uZ0vc3bktzvy0C+xov+/+Pb+9fSpvVFYRc+CnHpRDDz0C95H47vEJHWeeCp6Zz3HB7eouYWVeUeCaHQjPIWjDjSQtq555G55k8A73EYHNKAZ0rFk7HmS/1ORjeIdT3OUT8GwJ6SVAgde3kN+nAa+V3qHLJ2by8Snm+xWaz7fgjwG/h+82j3Pc+NgAAAAldEVYdGRhdGU6Y3JlYXRlADIwMjQtMDQtMTRUMDk6Mzg6MzUrMDA6MDA71XuNAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDI0LTA0LTE0VDA5OjM4OjM1KzAwOjAwSojDMQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAABXelRYdFJhdyBwcm9maWxlIHR5cGUgaXB0YwAAeJzj8gwIcVYoKMpPy8xJ5VIAAyMLLmMLEyMTS5MUAxMgRIA0w2QDI7NUIMvY1MjEzMQcxAfLgEigSi4A6hcRdPJCNZUAAAAASUVORK5CYII="
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABJlBMVEUAAAD/fwf/gAj/gAj/gA7/gAr/fwj/fwj/gAj/gAj/fwj/fwj/gAf/fgn/gAj/fwn/fwj/fQj/gAn/fwj/gAn/gAj/fwj/gAj/gAj/fQn/fwf/fgj/gAn/gAD/fQr/gAb/gAj/ZgD/fgf/fgn/gAf/cQD/gAD/gAn/gAD/gAj/gAD/eA//fwj/fAj/gAD/fwj/fwj/dwD/gAj/gAj/fwj/gAj/gAz/gAb/fwj/fwj/fgj/gAj/fwn/VQD/gAf/fgn/egr/ewn/gAn/fgn/gAf/gAj/fwj/dAD/fwj/fQb/gAj/gAj/gAr/fwj/gAj/fwn/AAD/fgn/gAj/gAj/gAf/fgf/fwj/fgj/fwj/fAf/gAD/gAj/fwj/gAj/gAj/gAj/fwj///9w9zgZAAAAYHRSTlMAre7UEhrL3Yg+09VMU+iTpz9U6ZSo2/ggOc19kA4zLkQFS1VOCRAcDCIIEfkhBuXtD178/WYWKJmj/qrRA2pzGRs6d25khwuDK/KENPW+kQF1yPqMb8NjoSMEhqlgpkB9QHMGAAAAAWJLR0RhsrBMhgAAAAlwSFlzAAAQ3wAAEN8BdFVeMAAAAAd0SU1FB+gEDgkmI030K2UAAADUSURBVBjTTc5rWwFREAfwvw27i6J0cclaamVTyV2dbiy6i5DKbb7/pzCHN+bF7znP/5k5M3Apypbb41VVDbpP9QdAXPo2s4MgG1oFu3tMGPvsAQ6JjiJRfsYQZ4+RMAwPkDRNN1Lpk1MLGcM4A7K2nQDOcxagEl1cXuWJrgvFEpUr60+r0lqducGtXLsZCEW5y917ifzWAweP2KwnuwE0HadVQFvrmHh2tJdXvHHf+wfzCTnSXW350qW9PvONATuUpw96I/YHYyF+//4nYjpDtS7miyVQFzip9ZC99AAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAyNC0wNC0xNFQwOTozODozNSswMDowMDvVe40AAAAldEVYdGRhdGU6bW9kaWZ5ADIwMjQtMDQtMTRUMDk6Mzg6MzUrMDA6MDBKiMMxAAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAAFd6VFh0UmF3IHByb2ZpbGUgdHlwZSBpcHRjAAB4nOPyDAhxVigoyk/LzEnlUgADIwsuYwsTIxNLkxQDEyBEgDTDZAMjs1Qgy9jUyMTMxBzEB8uASKBKLgDqFxF08kI1lQAAAABJRU5ErkJggg=="
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fresh harvest box</title>
+    
+    <script type="module" crossorigin src="/orange-life-style/commonHelpers.js"></script>
+    <link rel="stylesheet" href="/orange-life-style/assets/index-b35dc69f.css">
+  </head>
+  <body>
+    <header class="header">
+  <div class="header-container cnt-head">
+    <nav class="nav">
+      <a class="logo-a" href="">
+        <svg class="logo-header" width="16" height="16">
+          <use href="/orange-life-style/assets/icons-712ba792.svg#logoorange"></use>
+        </svg>
+        &#160;fruitbox
+      </a>
+      <ul class="nav-list">
+        <li class="nav-li">
+          <a class="nav-link" href="#steps">How It Works</a>
+        </li>
+        <li class="nav-li">
+          <a class="nav-link" href="#section-fruits">Fruits</a>
+        </li>
+        <li class="nav-li">
+          <a class="nav-link" href="#reviews">Reviews</a>
+        </li>
+        <li class="nav-li">
+          <a class="nav-link" href="#order">Order</a>
+        </li>
+      </ul>
+    </nav>
+    <a class="tel-link" href="tel:+380684439426">+380 (68) 443-94-26</a>
+    <button type="button" class="menu-btn" aria-label="Menu button">
+      <svg class="burger-btn" width="32" height="32">
+        <use href="/orange-life-style/assets/icons-712ba792.svg#burger-menu"></use>
+      </svg>
+    </button>
+  </div>
+</header>
+
+    <main>
+      <section class="hero">
+  <div class="container">
+      <h1 class="title">
+        <span class="gradient">Fresh harvest box</span> is your one-stop place
+        for a delicious fruit basket
+      </h1>
+      <ul class="text-list">
+        <li class="text-items">
+          <p class="text">#organic</p>
+        </li>
+        <li class="text-items">
+          <p class="text">#products</p>
+        </li>
+        <li class="text-items">
+          <p class="text">#basket</p>
+        </li>
+        <li class="text-items">
+          <p class="text">#fruits</p>
+        </li>
+      </ul>
+        <picture>
+                 <source
+                   media="(min-width: 1280px)"
+                   srcset="/orange-life-style/assets/hero-1_desc-f0c28d0f.avif 1x, /orange-life-style/assets/hero-1_desc@2x-de58666b.avif 2x"
+                   type="image/avif"
+                 />
+                 <source
+                   media="(min-width: 768px)"
+                   srcset="/orange-life-style/assets/hero-1_tab-099fd999.avif 1x, /orange-life-style/assets/hero-1_tab@2x-fdcb70f8.avif 2x"
+                   type="image/avif"
+                 />
+                 <source
+                   media="(max-width: 767px)"
+                   srcset="/orange-life-style/assets/hero-1_mob-39805559.avif 1x, /orange-life-style/assets/hero-1_mob@2x-6da9bb59.avif 2x"
+                   type="image/avif"
+                 />
+      <img
+        class="pic img"
+        src="/orange-life-style/assets/hero-1_mob-39805559.avif"
+        alt="hero img"
+        width="335"
+        height="500"
+      />
+     </picture>
+    </div>
+  </div>
+</section>
+
+      <section class="section-hiw" id="steps">
+  <div class="container">
+    <div class="sec-descr">
+      <h2 class="section-name">Steps</h2>
+      <div class="section-info sec-article">
+        <h3 class="h3-title">
+          To order your<span class="orange-span"> fruit basket</span>, simply
+          follow these easy steps
+        </h3>
+        <p class="par">
+          Our baskets are assembled with care and delivered straight to your
+          doorstep, so you can enjoy the taste of fresh fruit without ever
+          leaving your home. Whether you're looking for a healthy snack or a
+          thoughtful gift, our fruit baskets are the perfect choice.
+        </p>
+      </div>
+    </div>
+    <div class="box-hiw">
+      <div class="box-hiw-svg">
+        <ol class="hiw-ol">
+          <li class="hiw-list">
+            Just choose the fruit you want to<br class="hiw-br" />order by
+            clicking on the checkboxes next to it.
+          </li>
+          <li class="hiw-list">Click on the basket and fill out the form.</li>
+          <li class="hiw-list">
+            Sit back and relax! Your fresh fruit basket will be delivered.
+          </li>
+        </ol>
+      </div>
+      <div class="box-hiw-img">
+        <picture>
+          <source
+            srcset="/orange-life-style/assets/block-desk@1x-8bb156e5.avif 1x, /orange-life-style/assets/block-desk@2x-139877c1.avif 2x"
+            media="(min-width: 1280px)"
+          />
+          <source
+            srcset="/orange-life-style/assets/block-tab@1x-fd41d197.avif 1x, /orange-life-style/assets/block-tab@2x-c9e090fe.avif 2x"
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="/orange-life-style/assets/block-mob@1x-ce8d15aa.avif 1x, /orange-life-style/assets/block-mob@2x-397c451b.avif 2x"
+            media="(max-width:768px)"
+          />
+          <img
+            class="hiw-img"
+            src="/orange-life-style/assets/block-mob@1x-ce8d15aa.avif"
+            alt="girl-and-citrus"
+          />
+        </picture>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section id="section-fruits" class="section-fruits">
+  <div class="container">
+    <div class="sec-descr">
+      <h2 class="section-name">Fruits</h2>
+      <div class="sec-article">
+        <h3 class="h3-title">
+          Organic <span class="orange-span">fruits</span>
+        </h3>
+        <p class="par">
+          Our organic fruits are hand-picked from local farms and delivered
+          straight to your doorstep, ensuring that you get the freshest and most
+          nutritious produce possible. We offer a wide selection of organic
+          fruits grown without the use of harmful pesticides or chemicals.
+        </p>
+      </div>
+    </div>
+
+    <div class="fruits-item-wrapper">
+      <ul class="fruits-list">
+        <li class="fruits-item">
+          <picture>
+            <source
+              srcset="/orange-life-style/assets/ing-desk-tab@1x-orange-b5043e2a.avif 1x, /orange-life-style/assets/ing-desk-tab@2x-orange-f3c18916.avif 2x"
+              media="(min-width: 1280px)"
+            />
+            <source
+              srcset="/orange-life-style/assets/ing-desk-tab@1x-orange-b5043e2a.avif 1x, /orange-life-style/assets/ing-desk-tab@2x-orange-f3c18916.avif 2x"
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="/orange-life-style/assets/ing-mob@1x-orange-886f3c27.avif 1x, /orange-life-style/assets/ing-mob@2x-orange-82ec8f92.avif 2x"
+              media="(min-width:320px)"
+            />
+            <img
+              class="fruits-item-img"
+              width="190"
+              height="170"
+              src="/orange-life-style/assets/ing-mob@1x-orange-886f3c27.avif"
+              alt="orange fruit"
+            />
+          </picture>
+          <ul class="fruits-name-wrap">
+            <li class="name-wrap-item">
+              <h4 class="fruits-item-name">Orange</h4>
+              <p class="fruits-item-type">Plant</p>
+            </li>
+            <li class="name-wrap-item">
+              <button class="fruits-item-btn" type="button">60 UAH / kg</button>
+            </li>
+          </ul>
+        </li>
+        <li class="fruits-item">
+          <picture>
+            <source
+              srcset="/orange-life-style/assets/ing-desk-tab@1x-lime-997bd47f.avif 1x, /orange-life-style/assets/ing-desk-tab@2x-lime-617c9685.avif 2x"
+              media="(min-width: 1280px)"
+            />
+            <source
+              srcset="/orange-life-style/assets/ing-desk-tab@1x-lime-997bd47f.avif 1x, /orange-life-style/assets/ing-desk-tab@2x-lime-617c9685.avif 2x"
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="/orange-life-style/assets/ing-mob@1x-lime-cfd6a550.avif 1x, /orange-life-style/assets/ing-mob@2x-lime-fe318507.avif 2x"
+              media="(min-width:320px)"
+            />
+            <img
+              class="fruits-item-img"
+              width="190"
+              height="170"
+              src="/orange-life-style/assets/ing-mob@1x-lime-cfd6a550.avif"
+              alt="orange fruit"
+            />
+          </picture>
+          <ul class="fruits-name-wrap">
+            <li class="name-wrap-item">
+              <h4 class="fruits-item-name">Lime</h4>
+              <p class="fruits-item-type">Plant</p>
+            </li>
+            <li class="name-wrap-item">
+              <button class="fruits-item-btn" type="button">40 UAH / kg</button>
+            </li>
+          </ul>
+        </li>
+        <li class="fruits-item">
+          <picture>
+            <source
+              srcset="/orange-life-style/assets/ing-desk-tab@1x-peach-2760702b.avif 1x, /orange-life-style/assets/ing-desk-tab@2x-peach-2afcc3aa.avif 2x"
+              media="(min-width: 1280px)"
+            />
+            <source
+              srcset="/orange-life-style/assets/ing-desk-tab@1x-peach-2760702b.avif 1x, /orange-life-style/assets/ing-desk-tab@2x-peach-2afcc3aa.avif 2x"
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="/orange-life-style/assets/ing-mob@1x-peach-a454b75b.avif 1x, /orange-life-style/assets/ing-mob@2x-peach-5403c132.avif 2x"
+              media="(min-width:320px)"
+            />
+            <img
+              class="fruits-item-img"
+              width="190"
+              height="170"
+              src="/orange-life-style/assets/ing-mob@1x-peach-a454b75b.avif"
+              alt="orange fruit"
+            />
+          </picture>
+          <ul class="fruits-name-wrap">
+            <li class="name-wrap-item">
+              <h4 class="fruits-item-name">Peach</h4>
+              <p class="fruits-item-type">Plant</p>
+            </li>
+            <li class="name-wrap-item">
+              <button class="fruits-item-btn" type="button">80 UAH / kg</button>
+            </li>
+          </ul>
+        </li>
+        <li class="fruits-item">
+          <picture>
+            <source
+              srcset="/orange-life-style/assets/ing-desk-tab@1x-apple-c216b61b.avif 1x, /orange-life-style/assets/ing-desk-tab@2x-apple-7c772733.avif 2x"
+              media="(min-width: 1280px)"
+            />
+            <source
+              srcset="/orange-life-style/assets/ing-desk-tab@1x-apple-c216b61b.avif 1x, /orange-life-style/assets/ing-desk-tab@2x-apple-7c772733.avif 2x"
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="/orange-life-style/assets/ing-mob@1x-apple-b6b18209.avif 1x, /orange-life-style/assets/ing-mob@2x-apple-ac525019.avif 2x"
+              media="(min-width:320px)"
+            />
+            <img
+              class="fruits-item-img"
+              width="190"
+              height="170"
+              src="/orange-life-style/assets/ing-mob@1x-apple-b6b18209.avif"
+              alt="orange fruit"
+            />
+          </picture>
+          <ul class="fruits-name-wrap">
+            <li class="name-wrap-item">
+              <h4 class="fruits-item-name">Apple</h4>
+              <p class="fruits-item-type">Plant</p>
+            </li>
+            <li class="name-wrap-item">
+              <button class="fruits-item-btn" type="button">50 UAH / kg</button>
+            </li>
+          </ul>
+        </li>
+        <li class="fruits-item">
+          <picture>
+            <source
+              srcset="/orange-life-style/assets/ing-desk-tab@1x-banana-eb88288b.avif 1x, /orange-life-style/assets/ing-desk-tab@2x-banana-86c00e5c.avif 2x"
+              media="(min-width: 1280px)"
+            />
+            <source
+              srcset="/orange-life-style/assets/ing-desk-tab@1x-banana-eb88288b.avif 1x, /orange-life-style/assets/ing-desk-tab@2x-banana-86c00e5c.avif 2x"
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="/orange-life-style/assets/ing-mob@1x-banana-b5322538.avif 1x, /orange-life-style/assets/ing-mob@2x-banana-8b7d32db.avif 2x"
+              media="(min-width:320px)"
+            />
+            <img
+              class="fruits-item-img"
+              width="190"
+              height="170"
+              src="/orange-life-style/assets/ing-mob@1x-banana-b5322538.avif"
+              alt="orange fruit"
+            />
+          </picture>
+          <ul class="fruits-name-wrap">
+            <li class="name-wrap-item">
+              <h4 class="fruits-item-name">Banana</h4>
+              <p class="fruits-item-type">Plant</p>
+            </li>
+            <li class="name-wrap-item">
+              <button class="fruits-item-btn" type="button">80 UAH / kg</button>
+            </li>
+          </ul>
+        </li>
+        <li class="fruits-item">
+          <picture>
+            <source
+              srcset="/orange-life-style/assets/ing-desk-tab@1x-kiwi-555c28e0.avif 1x, /orange-life-style/assets/ing-desk-tab@2x-kiwi-262c869c.avif 2x"
+              media="(min-width: 1280px)"
+            />
+            <source
+              srcset="/orange-life-style/assets/ing-desk-tab@1x-kiwi-555c28e0.avif 1x, /orange-life-style/assets/ing-desk-tab@2x-kiwi-262c869c.avif 2x"
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="/orange-life-style/assets/ing-mob@1x-kiwi-3b56ac98.avif 1x, /orange-life-style/assets/ing-mob@2x-kiwi-f27b1e12.avif 2x"
+              media="(min-width:320px)"
+            />
+            <img
+              class="fruits-item-img"
+              width="190"
+              height="170"
+              src="/orange-life-style/assets/ing-mob@1x-kiwi-3b56ac98.avif"
+              alt="orange fruit"
+            />
+          </picture>
+          <ul class="fruits-name-wrap">
+            <li class="name-wrap-item">
+              <h4 class="fruits-item-name">Kiwi</h4>
+              <p class="fruits-item-type">Plant</p>
+            </li>
+            <li class="name-wrap-item">
+              <button class="fruits-item-btn" type="button">90 UAH / kg</button>
+            </li>
+          </ul>
+        </li>
+        <li class="fruits-item tablet">
+          <picture>
+            <source
+              srcset="/orange-life-style/assets/ing-desk-tab@1x-plum-ad92db0d.avif 1x, /orange-life-style/assets/ing-desk-tab@2x-plum-a1a76a9d.avif 2x"
+              media="(min-width: 1280px)"
+            />
+            <source
+              srcset="/orange-life-style/assets/ing-desk-tab@1x-plum-ad92db0d.avif 1x, /orange-life-style/assets/ing-desk-tab@2x-plum-a1a76a9d.avif 2x"
+              media="(min-width: 768px)"
+            />
+            <img
+              class="fruits-item-img"
+              width="190"
+              height="170"
+              src="/orange-life-style/assets/ing-desk-tab@1x-plum-ad92db0d.avif"
+              alt="orange fruit"
+            />
+          </picture>
+          <ul class="fruits-name-wrap">
+            <li class="name-wrap-item">
+              <h4 class="fruits-item-name">Plums</h4>
+              <p class="fruits-item-type">Plant</p>
+            </li>
+            <li class="name-wrap-item">
+              <button class="fruits-item-btn" type="button">40 UAH / kg</button>
+            </li>
+          </ul>
+        </li>
+        <li class="fruits-item tablet">
+          <picture>
+            <source
+              srcset="/orange-life-style/assets/ing-desk-tab@1x-strawberry-891b2992.avif 1x, /orange-life-style/assets/ing-desk-tab@2x-strawberry-15d08aad.avif 2x"
+              media="(min-width: 1280px)"
+            />
+            <source
+              srcset="/orange-life-style/assets/ing-desk-tab@1x-strawberry-891b2992.avif 1x, /orange-life-style/assets/ing-desk-tab@2x-strawberry-15d08aad.avif 2x"
+              media="(min-width: 768px)"
+            />
+            <img
+              class="fruits-item-img"
+              width="190"
+              height="170"
+              src="/orange-life-style/assets/ing-desk-tab@1x-strawberry-891b2992.avif"
+              alt="orange fruit"
+            />
+          </picture>
+          <ul class="fruits-name-wrap">
+            <li class="name-wrap-item">
+              <h4 class="fruits-item-name">Strawberry</h4>
+              <p class="fruits-item-type">Plant</p>
+            </li>
+            <li class="name-wrap-item">
+              <button class="fruits-item-btn" type="button">
+                100 UAH / kg
+              </button>
+            </li>
+          </ul>
+        </li>
+        <li class="fruits-item desk">
+          <picture>
+            <source
+              srcset="/orange-life-style/assets/ing-desk-tab@1x-watormelon-9f0985e5.avif 1x, /orange-life-style/assets/ing-desk-tab@2x-watormelon-e0d12200.avif 2x"
+              media="(min-width: 1280px)"
+            />
+            <source
+              srcset="/orange-life-style/assets/ing-desk-tab@1x-watormelon-9f0985e5.avif 1x, /orange-life-style/assets/ing-desk-tab@2x-watormelon-e0d12200.avif 2x"
+              media="(min-width: 768px)"
+            />
+            <img
+              class="fruits-item-img"
+              width="190"
+              height="170"
+              src="/orange-life-style/assets/ing-desk-tab@1x-watormelon-9f0985e5.avif"
+              alt="orange fruit"
+            />
+          </picture>
+          <ul class="fruits-name-wrap">
+            <li class="name-wrap-item">
+              <h4 class="fruits-item-name">Watermelon</h4>
+              <p class="fruits-item-type">Plant</p>
+            </li>
+            <li class="name-wrap-item">
+              <button class="fruits-item-btn" type="button">40 UAH / kg</button>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+    <div class="show-btn-wrapp">
+      <button class="ftuits-show-btn mob" type="button">Show more</button>
+    </div>
+  </div>
+</section>
+
+      <section class="section" id="reviews">
+  <div class="container">
+    <div class="sec-descr">
+      <h2 class="section-name">Reviews</h2>
+      <div class="sec-article">
+        <h3 class="h3-title">
+          Your <span class="orange-span">impressions</span> of organic fruits
+        </h3>
+        <p class="par">
+          Our boxes are packed with delicious, nutritious fruits and vegetables,
+          perfect for anyone looking to eat healthier or support local farmers.
+          Order your box today and start enjoying the best that nature has to
+          offer!
+        </p>
+      </div>
+    </div>
+    <ul class="reviews-container">
+      <li class="review">
+        <ul class="stars rating-4">
+          <li class="star-li">
+            <svg class="star" width="20" height="20">
+              <use href="/orange-life-style/assets/icons-712ba792.svg#icon-star"></use>
+            </svg>
+          </li>
+          <li class="star-li">
+            <svg class="star" width="20" height="20">
+              <use href="/orange-life-style/assets/icons-712ba792.svg#icon-star"></use>
+            </svg>
+          </li>
+          <li class="star-li">
+            <svg class="star" width="20" height="20">
+              <use href="/orange-life-style/assets/icons-712ba792.svg#icon-star"></use>
+            </svg>
+          </li>
+          <li class="star-li">
+            <svg class="star" width="20" height="20">
+              <use href="/orange-life-style/assets/icons-712ba792.svg#icon-star"></use>
+            </svg>
+          </li>
+          <li class="star-li">
+            <svg class="star" width="20" height="20">
+              <use href="/orange-life-style/assets/icons-712ba792.svg#icon-star"></use>
+            </svg>
+          </li>
+        </ul>
+        <div class="person-reviewer">
+          <picture class="reviewer-ava">
+            <source
+              srcset="data:image/avif;base64,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 1x, data:image/avif;base64,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 2x"
+              media="(max-width: 767px)"
+            />
+            <source
+              srcset="data:image/avif;base64,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 1x, /orange-life-style/assets/Vic-tab_@2x-f0c82749.avif 2x"
+              media="(min-width: 768px)"
+            />
+            <img
+              src="./img/rewies-desk-tab/Vic-tab+.png"
+              alt="User Picture"
+              loading="lazy"
+            />
+          </picture>
+          <div class="person-info">
+            <h4 class="reviewer-name">Victoria</h4>
+            <p class="reviewer-status">Student</p>
+          </div>
+        </div>
+        <p class="par-rev">
+          The range of berries is simply amazing! Organic strawberries and
+          raspberries are real flavor bombs. It's great to be able to enjoy
+          natural sweetness without worrying about chemicals.
+        </p>
+      </li>
+      <li class="review mob-tab-hide">
+        <ul class="stars rating-3">
+          <li class="star-li">
+            <svg class="star" width="20" height="20">
+              <use href="/orange-life-style/assets/icons-712ba792.svg#icon-star"></use>
+            </svg>
+          </li>
+          <li class="star-li">
+            <svg class="star" width="20" height="20">
+              <use href="/orange-life-style/assets/icons-712ba792.svg#icon-star"></use>
+            </svg>
+          </li>
+          <li class="star-li">
+            <svg class="star" width="20" height="20">
+              <use href="/orange-life-style/assets/icons-712ba792.svg#icon-star"></use>
+            </svg>
+          </li>
+          <li class="star-li">
+            <svg class="star" width="20" height="20">
+              <use href="/orange-life-style/assets/icons-712ba792.svg#icon-star"></use>
+            </svg>
+          </li>
+          <li class="star-li">
+            <svg class="star" width="20" height="20">
+              <use href="/orange-life-style/assets/icons-712ba792.svg#icon-star"></use>
+            </svg>
+          </li>
+        </ul>
+        <div class="person-reviewer">
+          <picture class="reviewer-ava">
+            <!-- <source
+                    srcset=" 1x,
+                     2x"
+                    media="(max-width: 767px)"> -->
+            <source
+              srcset="data:image/avif;base64,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 1x, /orange-life-style/assets/Alex-tab_@2x-5c47b1a8.avif 2x"
+              media="(min-width: 768px)"
+            />
+            <img
+              src="./img/rewies-desk-tab/Alex-tab+.png"
+              alt="User Picture"
+              loading="lazy"
+            />
+          </picture>
+          <div class="person-info">
+            <h4 class="reviewer-name">Alex</h4>
+            <p class="reviewer-status">Student</p>
+          </div>
+        </div>
+        <p class="par-rev">
+          I recently tried organic apples, and they impressed me with their
+          unique taste harmony. A real experience for those who are looking for
+          not only fruit, but also aesthetic pleasure from the taste!
+        </p>
+      </li>
+    </ul>
+    <picture>
+      <source
+        srcset="/orange-life-style/assets/fruits-rev-cover-mob-4ce9bc9e.avif 1x, /orange-life-style/assets/fruits-rev-cover-mob@2x-e574f1e8.avif 2x"
+        media="(max-width: 767px)"
+      />
+      <source
+        srcset="/orange-life-style/assets/fruits-rev-cover-tab-bbb56861.avif 1x, /orange-life-style/assets/fruits-rev-cover-tab@2x-00a4e25a.avif 2x"
+        media="(max-width: 1279px)"
+      />
+      <source
+        srcset="/orange-life-style/assets/fruits-rev-cover-desktop-beb42aee.avif 1x, /orange-life-style/assets/fruits-rev-cover-desktop@2x-8fccce91.avif 2x"
+        media="(min-width: 1280px)"
+      />
+      <img
+        loading="lazy"
+        src="./img/rewies-desk-tab/fruits-rev-cover-desktop.jpg"
+        alt="Fruits"
+        class="decor-img"
+      />
+    </picture>
+  </div>
+</section>
+
+      <section id="order">
+  <div class="container">
+    <div class="sec-descr">
+      <h2 class="section-name">Order</h2>
+      <div class="sec-article">
+        <h3 class="h3-title">
+          Fresh <span class="orange-span">Harvest Box</span> has got you covered
+        </h3>
+        <p class="par">
+          Organic choice is a step towards health. Join our satisfied customers
+          and enjoy the real quality in every organic fruit corn!
+        </p>
+      </div>
+    </div>
+    <div class="order-div">
+      <form class="order-form">
+        <input
+          class="order-input"
+          type="text"
+          placeholder="Enter full name"
+          required
+        />
+        <input
+          class="order-input"
+          type="email"
+          placeholder="Enter email"
+          pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+          required
+        />
+        <textarea
+          class="order-input order-textarea"
+          placeholder="Enter comments"
+          required
+        ></textarea>
+        <button class="button-submit" type="submit">Submit</button>
+      </form>
+      <picture>
+        <source
+          srcset="/orange-life-style/assets/block-2-desk@1x-fc28242d.avif 1x, /orange-life-style/assets/block-2-desk@2x-66f38a08.avif 2x"
+          media="(min-width:1280px)"
+        />
+        <img
+          class="img order-form-img"
+          src="/orange-life-style/assets/block-2-desk@1x-fc28242d.avif"
+          alt=""
+        />
+      </picture>
+    </div>
+    <picture>
+      <source
+        srcset="/orange-life-style/assets/block-2-desk@1x-fc28242d.avif 1x, /orange-life-style/assets/block-2-desk@2x-66f38a08.avif 2x"
+        media="(min-width:1280px)"
+      />
+      <source
+        srcset="/orange-life-style/assets/block-2-tab@1x-4eb695bb.avif 1x, /orange-life-style/assets/block-2-tab@2x-507e5c4c.avif 2x"
+        media="(min-width:768px)"
+      />
+      <source
+        srcset="/orange-life-style/assets/block-2-mob@1x-a50ec888.avif 1x, /orange-life-style/assets/block-2-mob@2x-170675a4.avif 2x"
+        media="(max-width:768px)"
+      />
+      <img
+        class="img order-img"
+        src="/orange-life-style/assets/block-2-mob@1x-a50ec888.avif"
+        alt=""
+      />
+    </picture>
+  </div>
+</section>
+
+    </main>
+    <footer class="footer">
+  <div class="container">
+    <div class="footer-top">
+      <p class="footer-descr">
+        Discover the magic of <span class="orange-span">organic fruit</span> in
+        an incredible range of taste
+        <span class="orange-span">experiences</span>
+      </p>
+      <div class="footer-socials-wrapper">
+        <ul class="footer-socials-list">
+          <li class="footer-socials-item">
+            <a
+              class="footer-socials-link"
+              href="https://www.facebook.com/goITclub/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="facebook link"
+              ><svg class="footer-socials-icon" width="20" height="20">
+                <use href="/orange-life-style/assets/icons-712ba792.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer-socials-item">
+            <a
+              class="footer-socials-link"
+              href="https://www.instagram.com/goitclub/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="instagram link"
+              ><svg class="footer-socials-icon" width="20" height="20">
+                <use href="/orange-life-style/assets/icons-712ba792.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer-socials-item">
+            <a
+              class="footer-socials-link"
+              href="https://www.youtube.com/c/GoIT"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="youtube link"
+              ><svg class="footer-socials-icon" width="20" height="20">
+                <use href="/orange-life-style/assets/icons-712ba792.svg#icon-youtube"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <address class="footer-address">
+          <a class="footer-tel" href="tel:+380684439426">+380 (68) 443-94-26</a>
+          <p class="footer-address-descr">
+            1678 S. Pioneer Road Salt&#160;Lake City<br />
+            UT 84104
+          </p>
+        </address>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <ul class="footer-nav">
+        <li class="footer-nav-item">
+          <a class="footer-nav-link" href="#steps">How It Works</a>
+        </li>
+        <li class="footer-nav-item">
+          <a class="footer-nav-link" href="#section-fruits">Fruits</a>
+        </li>
+        <li class="footer-nav-item">
+          <a class="footer-nav-link" href="#reviews">Reviews</a>
+        </li>
+        <li class="footer-nav-item">
+          <a class="footer-nav-link" href="#order">Order</a>
+        </li>
+      </ul>
+      <a class="logo footer-logo" href="">
+        <svg class="footer-logo-item" width="14" height="14">
+          <use href="/orange-life-style/assets/icons-712ba792.svg#icon-logo"></use>
+        </svg>
+        fruitbox
+      </a>
+    </div>
+  </div>
+</footer>
+
+
+    <div class="burger-menu">
+  <picture>
+    <source
+      srcset="/orange-life-style/assets/mob-menu@1x-9d61fa3b.avif 1x, /orange-life-style/assets/mob-menu@2x-8fa0087d.avif 2x"
+      media="(max-width: 767px)"
+      type="image/avif"
+    />
+    <source
+      srcset="/orange-life-style/assets/tab-menu@1x-533a164c.avif 1x, /orange-life-style/assets/tab-menu@2x-56967baf.avif 2x"
+      media="(min-width: 768px)"
+      type="image/avif"
+    />
+    <img
+      src="/orange-life-style/assets/mob-menu@1x-9d61fa3b.avif"
+      alt="citrus mics"
+      class="bgr-img"
+      type="image/avif"
+    />
+  </picture>
+  <div class="box-menu">
+    <button class="btn-exit" aria-label="button for exit menu">
+      <svg class="swg-exit" width="28" height="28">
+        <use href="/orange-life-style/assets/icons-712ba792.svg#icon-exit"></use>
+      </svg>
+    </button>
+    <nav class="nav-menu">
+      <ul class="list-menu">
+        <li class="items-menu">
+          <a href="#steps" class="caption-menu activ">How It Works</a>
+        </li>
+        <li class="items-menu">
+          <a href="#section-fruits" class="caption-menu">Fruits</a>
+        </li>
+        <li class="items-menu">
+          <a href="#reviews" class="caption-menu">Reviews</a>
+        </li>
+        <li class="items-menu">
+          <a href="#order" class="caption-menu">Order</a>
+        </li>
+      </ul>
+    </nav>
+    <address class="address">
+      <a href="tel:+380684439426" class="contact">+380 (68) 443-94-26</a>
+    </address>
+  </div>
+</div>
+
+
+    
+  </body>
+</html>
