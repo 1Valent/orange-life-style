@@ -14,7 +14,6 @@
   padding: 60px 20px;
 }
 .box-hiw-svg {
-  height: 330px;
   padding: 60px 20px;
   border-radius: 16px;
   background: #ff7f08;
@@ -83,7 +82,6 @@
     column-gap: 16px;
   }
   .box-hiw-svg {
-    height: 382px;
     padding: 72px 195px 77px 80px;
     background-position: 7px -120px;
     margin-bottom: 16px;
@@ -108,7 +106,7 @@
   }
 }
 
-@media only screen and (min-width: 376px) {
+@media only screen and (min-width: 767px) {
   br {
     display: none;
   }
@@ -135,7 +133,6 @@
     justify-content: space-between;
     margin-bottom: 0;
     padding: 72px 80px;
-    height: 382px;
   }
 
   .hiw-img {
