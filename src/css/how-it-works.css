@@ -24,7 +24,7 @@
   justify-content: center;
   align-items: center;
   flex-shrink: 0;
-  background-image: url(./img/block-steps-bg/steps-bg.svg);
+  background-image: url(../img/block-steps-bg/steps-bg.svg);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -108,7 +108,7 @@
   }
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (min-width: 376px) {
   br {
     display: none;
   }
@@ -128,7 +128,7 @@
     height: 382px;
   }
   .box-hiw-svg {
-    background-image: url(./img/block-steps-bg/steps-bg-desk.svg);
+    background-image: url(../img/block-steps-bg/steps-bg-desk.svg);
     background-position: -30px -70px;
     background-size: cover;
     flex-direction: row;
