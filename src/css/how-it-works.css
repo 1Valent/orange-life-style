@@ -24,7 +24,7 @@
   justify-content: center;
   align-items: center;
   flex-shrink: 0;
-  background-image: url(../img/block-steps-bg/steps-bg.svg);
+  background-image: url(./img/block-steps-bg/steps-bg.svg);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -123,12 +123,12 @@
     display: flex;
     flex-direction: row;
     background-color: #ff7f08;
-    justify-content: space-between;
     border-radius: 16px;
     width: 1216px;
     height: 382px;
   }
   .box-hiw-svg {
+    background-image: url(./img/block-steps-bg/steps-bg-desk.svg);
     background-position: -30px -70px;
     background-size: cover;
     flex-direction: row;
@@ -137,9 +137,7 @@
     padding: 72px 80px;
     height: 382px;
   }
-  .box-hiw-svg {
-    padding: 72px 0px 72px 80px;
-  }
+
   .hiw-img {
     width: 627px;
     height: 382px;
