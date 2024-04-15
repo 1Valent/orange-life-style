@@ -5,8 +5,8 @@
 /* mobile container */
 .cnt-head {
   min-width: 320px;
-  max-width: 375px;
-  padding: 0px 32px;
+  max-width: 374px;
+  padding: 0px 20px;
   margin: 0 auto;
 }
 
@@ -30,7 +30,7 @@
   display: flex;
   align-items: center;
   padding-bottom: 38px;
-  padding-top: 28px;
+  padding-top: 24px;
   justify-content: center;
 }
 
@@ -87,13 +87,16 @@
 .logo-a {
   display: flex;
   align-items: center;
-  margin-right: 220px;
+
   font-size: 18px;
   line-height: 1;
   letter-spacing: -0.04em;
 }
-
-
+@media only screen and (min-width: 1280px) {
+  .logo-a {
+    margin-right: 220px;
+  }
+}
 .nav-link {
   width: 140px;
   padding: 8px;
@@ -103,10 +106,10 @@
   line-height: 1.28571;
   letter-spacing: -0.01em;
   font-size: 14px;
-  
+
   border-radius: 8px;
   border: 1px solid rgba(15, 15, 15, 0.1);
-  transition: transform 0.2s ease
+  transition: transform 0.2s ease;
 }
 
 .nav-link:active {
@@ -121,13 +124,13 @@
 
 @keyframes stretching {
   0% {
-      transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
   }
   30% {
     transform: scale3d(1.25, 0.75, 1);
   }
   40% {
-  transform: scale3d(0.75, 1.25, 1);
+    transform: scale3d(0.75, 1.25, 1);
   }
   50% {
     transform: scale3d(1.15, 0.85, 1);
@@ -142,7 +145,6 @@
     transform: scale3d(1, 1, 1);
   }
 }
-
 
 /* mobile container */
 .menu-btn {
