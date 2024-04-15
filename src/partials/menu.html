@@ -2,26 +2,29 @@
   <picture>
     <source
       srcset="
-        ./img/mob-menu/mob-menu@1x.jpg 1x,
-        ./img/mob-menu/mob-menu@2x.jpg 2x
+        ./img/mob-menu/mob-menu@1x.avif 1x,
+        ./img/mob-menu/mob-menu@2x.avif 2x
       "
       media="(max-width: 767px)"
+      type="image/avif"
     />
     <source
       srcset="
-        ./img/tab-menu/tab-menu@1x.jpg 1x,
-        ./img/tab-menu/tab-menu@2x.jpg 2x
+        ./img/tab-menu/tab-menu@1x.avif 1x,
+        ./img/tab-menu/tab-menu@2x.avif 2x
       "
       media="(min-width: 768px)"
+      type="image/avif"
     />
     <img
-      src="./img/mob-menu/mob-menu@1x.jpg"
+      src="./img/mob-menu/mob-menu@1x.avif"
       alt="citrus mics"
       class="bgr-img"
+      type="image/avif"
     />
   </picture>
   <div class="box-menu">
-    <button class="btn-exit">
+    <button class="btn-exit" aria-label="button for exit menu">
       <svg class="swg-exit" width="28" height="28">
         <use href="./img/icons/icons.svg#icon-exit"></use>
       </svg>
