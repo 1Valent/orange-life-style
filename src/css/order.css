@@ -34,7 +34,7 @@
 }
 .order-textarea  {
     resize: none;
-    height: 73px;
+    height: 97px;
     margin-bottom: 12px;
 }
 
@@ -80,6 +80,9 @@
         line-height: 20px;
 
         max-width: 400px;
+    }
+    .order-textarea {
+        height: 101px;
     }
 }
 @media screen and (min-width: 1280px) {
